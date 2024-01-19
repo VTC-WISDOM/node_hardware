@@ -1,0 +1,31 @@
+LQM2HPN1R0M https://www.digikey.com/en/products/detail/murata-electronics/LQM2HPN1R0MJ0L/2594610
+
+CL21A106KOQNNNG https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A106KOQNNNG/3894417
+
+CL21B105KPFNNNE https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21B105KPFNNNE/3886933
+
+CL21A475KAQNNNE https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL21A475KAQNNNE/3886902
+
+ADP2108AUJZ-3.3-R7 https://www.digikey.com/en/products/detail/analog-devices-inc/ADP2108AUJZ-3-3-
+
+R7/2042669 https://www.analog.com/media/en/technical-documentation/data-sheets/ADP2108.pdf
+
+CAT3200TDI-GT3 https://www.digikey.com/en/products/detail/onsemi/CAT3200TDI-GT3/2063374 https://www.onsemi.com/pdf/datasheet/cat3200-d.pdf
+
+MCP73831T-2ACI/OT https://www.digikey.com/en/products/detail/microchip-technology/MCP73831T-2ACI-OT/964301 https://ww1.microchip.com/downloads/en/DeviceDoc/MCP73831-Family-Data-Sheet-DS20001984H.pdf
+
+QTLP650D4TR https://www.digikey.com/en/products/detail/everlight-electronics-co-ltd/QTLP650D4TR/2675910
+
+01110501Z https://www.digikey.com/en/products/detail/littelfuse-inc/01110501Z/2518598
+
+1040310811 https://www.digikey.com/en/products/detail/molex/1040310811/2370379
+
+RK73B2ATTD471J https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73B2ATTD471J/10236598
+
+RNCP0805FTD1K00 https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCP0805FTD1K00/2240229
+
+RNCP0805FTD2K00 https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCP0805FTD2K00/2240237
+
+RNCP0805FTD10K0 https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCP0805FTD10K0/2240262
+
+RK73B2ATTD474J https://www.digikey.com/en/products/detail/koa-speer-electronics-inc/RK73B2ATTD474J/10235967
