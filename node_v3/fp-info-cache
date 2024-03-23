@@ -1,4 +1,4 @@
-23033281482614414
+23040126366693312
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -94366,6 +94366,34 @@ Varistor VF
 0
 2
 2
+custom
+AMPHENOL_12402012E212A
+
+
+0
+16
+16
+custom
+PTS526
+
+PTS526 SK15 SMTR2 LFS 
+0
+4
+4
+custom
+SC-32S
+
+
+0
+2
+2
+custom
+SMT_FS
+
+PTS526 SK15 SMTR2 LFS 
+0
+4
+4
 kicad-footprints-master
 XTAL_M445
 
