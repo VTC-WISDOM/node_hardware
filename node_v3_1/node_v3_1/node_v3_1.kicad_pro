@@ -51,7 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -109,21 +115,21 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
+        "min_clearance": 0.0889,
+        "min_connection": 0.0889,
         "min_copper_edge_clearance": 0.5,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
-        "min_microvia_diameter": 0.2,
-        "min_microvia_drill": 0.1,
+        "min_hole_clearance": 0.254,
+        "min_hole_to_hole": 0.5,
+        "min_microvia_diameter": 0.25,
+        "min_microvia_drill": 0.15,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
-        "min_via_annular_width": 0.1,
-        "min_via_diameter": 0.5,
+        "min_through_hole_diameter": 0.15,
+        "min_track_width": 0.0889,
+        "min_via_annular_width": 0.2,
+        "min_via_diameter": 0.25,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -170,7 +176,19 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.1016,
+        0.1524,
+        0.2032,
+        0.254,
+        0.3048,
+        0.3556,
+        0.4064,
+        0.4572,
+        0.508,
+        0.6096
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -197,7 +215,28 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.25,
+          "drill": 0.15
+        },
+        {
+          "diameter": 0.3048,
+          "drill": 0.2032
+        },
+        {
+          "diameter": 0.4064,
+          "drill": 0.254
+        },
+        {
+          "diameter": 0.508,
+          "drill": 0.4064
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -215,17 +254,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "pin_not_driven|863600|1854200|8396c833-24f6-49eb-8814-bee93c95d0b2|00000000-0000-0000-0000-000000000000|/e774f05c-3d76-4c30-8e02-47afd946aaf5|/e774f05c-3d76-4c30-8e02-47afd946aaf5|",
-      "power_pin_not_driven|1117600|2692400|4aecdb34-f651-4822-be47-0ab14a8199c4|00000000-0000-0000-0000-000000000000|/e774f05c-3d76-4c30-8e02-47afd946aaf5|/e774f05c-3d76-4c30-8e02-47afd946aaf5|",
-      "power_pin_not_driven|1168400|1778000|bb3ba24d-516d-4b67-aa17-40b3139aed21|00000000-0000-0000-0000-000000000000|/e774f05c-3d76-4c30-8e02-47afd946aaf5|/e774f05c-3d76-4c30-8e02-47afd946aaf5|",
-      "power_pin_not_driven|2336800|2336800|74a6bfb4-a348-4125-aeb4-8a0a65f3f647|00000000-0000-0000-0000-000000000000|/e774f05c-3d76-4c30-8e02-47afd946aaf5|/e774f05c-3d76-4c30-8e02-47afd946aaf5|",
-      "power_pin_not_driven|2755900|939800|74a6bfb4-a348-4125-aeb4-8a0a65f3f647|00000000-0000-0000-0000-000000000000|/e774f05c-3d76-4c30-8e02-47afd946aaf5|/e774f05c-3d76-4c30-8e02-47afd946aaf5|",
-      "power_pin_not_driven|3403600|2273300|b9c1837f-213f-43a3-9e52-704471f50e5d|00000000-0000-0000-0000-000000000000|/e774f05c-3d76-4c30-8e02-47afd946aaf5|/e774f05c-3d76-4c30-8e02-47afd946aaf5|",
-      "power_pin_not_driven|457200|368300|0ed103e3-8728-47b0-8bf2-106e93bbd617|00000000-0000-0000-0000-000000000000|/e774f05c-3d76-4c30-8e02-47afd946aaf5|/e774f05c-3d76-4c30-8e02-47afd946aaf5|",
-      "power_pin_not_driven|546100|1016000|071d9a9a-fdc7-4c9c-8beb-333d88af67ed|00000000-0000-0000-0000-000000000000|/e774f05c-3d76-4c30-8e02-47afd946aaf5|/e774f05c-3d76-4c30-8e02-47afd946aaf5|",
-      "power_pin_not_driven|711200|355600|f6439d2f-6b07-4a1b-96d0-ed7e93764e27|00000000-0000-0000-0000-000000000000|/e774f05c-3d76-4c30-8e02-47afd946aaf5|/e774f05c-3d76-4c30-8e02-47afd946aaf5|"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
