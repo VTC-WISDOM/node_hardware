@@ -84,10 +84,10 @@
 			(layerselection 0x00010fc_ffffffff)
 			(plot_on_all_layers_selection 0x0000000_00000000)
 			(disableapertmacros no)
-			(usegerberextensions no)
-			(usegerberattributes yes)
-			(usegerberadvancedattributes yes)
-			(creategerberjobfile yes)
+			(usegerberextensions yes)
+			(usegerberattributes no)
+			(usegerberadvancedattributes no)
+			(creategerberjobfile no)
 			(dashed_line_dash_ratio 12.000000)
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
@@ -106,16 +106,16 @@
 			(psnegative no)
 			(psa4output no)
 			(plotreference yes)
-			(plotvalue yes)
+			(plotvalue no)
 			(plotfptext yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
-			(subtractmaskfromsilk no)
+			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "../gerbers/")
 		)
 	)
 	(net 0 "")
@@ -128,7 +128,7 @@
 		(descr "Connector SMA, 0Hz to 20GHz, 50Ohm, Edge Mount (http://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf)")
 		(tags "SMA Straight Samtec Edge Mount")
 		(property "Reference" "J1"
-			(at 0 -3.5 270)
+			(at 0 -3.5 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ba238a6c-1502-48a5-9617-193999ce792e")
@@ -140,7 +140,7 @@
 			)
 		)
 		(property "Value" "Conn_Coaxial"
-			(at 0 13 270)
+			(at 0 13 -90)
 			(layer "F.Fab")
 			(uuid "c884b226-8918-4b98-979d-d653c41a8309")
 			(effects
@@ -532,7 +532,7 @@
 			(uuid "fde97a9b-a764-4bf0-ae43-bf0df4c00693")
 		)
 		(fp_text user "PCB Edge"
-			(at 0 2.6 270)
+			(at 0 2.6 -90)
 			(layer "Dwgs.User")
 			(uuid "0be1eec2-4008-41db-9068-254b1109b5eb")
 			(effects
@@ -543,7 +543,7 @@
 			)
 		)
 		(fp_text user "Board Thickness: 1.57mm"
-			(at 0 -5.45 270)
+			(at 0 -5.45 -90)
 			(layer "Cmts.User")
 			(uuid "96fedeb6-477f-4794-be57-87b5a6f247e8")
 			(effects
@@ -554,7 +554,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 4.79 270)
+			(at 0 4.79 -90)
 			(layer "F.Fab")
 			(uuid "8004323b-91c1-4cf1-bb67-45cfe45abee1")
 			(effects
