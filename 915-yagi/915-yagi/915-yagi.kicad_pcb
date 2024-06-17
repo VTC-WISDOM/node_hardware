@@ -81,20 +81,20 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
+			(layerselection 0x0001000_7fffffff)
 			(plot_on_all_layers_selection 0x0000000_00000000)
 			(disableapertmacros no)
-			(usegerberextensions yes)
-			(usegerberattributes no)
+			(usegerberextensions no)
+			(usegerberattributes yes)
 			(usegerberadvancedattributes no)
-			(creategerberjobfile no)
+			(creategerberjobfile yes)
 			(dashed_line_dash_ratio 12.000000)
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
 			(viasonmask no)
 			(mode 1)
-			(useauxorigin no)
+			(useauxorigin yes)
 			(hpglpennumber 1)
 			(hpglpenspeed 20)
 			(hpglpendiameter 15.000000)
@@ -105,30 +105,100 @@
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
+			(plotreference no)
 			(plotvalue no)
-			(plotfptext yes)
+			(plotfptext no)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
-			(subtractmaskfromsilk yes)
+			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "../gerbers/")
+			(outputdirectory "../gerbers/2024-06-11/")
 		)
 	)
 	(net 0 "")
 	(net 1 "ANT")
 	(net 2 "GND")
+	(footprint ""
+		(layer "F.Cu")
+		(uuid "1fdffa3e-4835-4445-963f-5b03f4dbbc23")
+		(at 38.1 109.22)
+		(property "Reference" ""
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "ea626a94-77ee-44f8-a2da-e44218cc7e9a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "2118e277-0433-4300-9474-5b57b90a6f9f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d895d5f-5c4d-4340-8f09-3c9d1117ae61")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "106bc120-bcfe-47e7-8481-25a82a9e162d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0cd29630-f04f-4960-9723-668679abcc7a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 6.4 6.4)
+			(drill 6.4)
+			(layers "F&B.Cu" "*.Mask")
+			(uuid "2763c8cc-1ecb-4f30-a57f-e7f3f6003960")
+		)
+	)
 	(footprint "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount"
 		(layer "F.Cu")
-		(uuid "38050b94-606b-44a6-891e-6acb949dd887")
-		(at 69.3375 107.5 90)
+		(uuid "36787f9d-cc5a-430d-b6c9-f3d4def1e02b")
+		(at 99.775 43.8425)
 		(descr "Connector SMA, 0Hz to 20GHz, 50Ohm, Edge Mount (http://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf)")
 		(tags "SMA Straight Samtec Edge Mount")
 		(property "Reference" "J1"
-			(at 0 -3.5 -90)
+			(at 0 -3.5 360)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ba238a6c-1502-48a5-9617-193999ce792e")
@@ -140,7 +210,7 @@
 			)
 		)
 		(property "Value" "Conn_Coaxial"
-			(at 0 13 -90)
+			(at 0 13 360)
 			(layer "F.Fab")
 			(uuid "c884b226-8918-4b98-979d-d653c41a8309")
 			(effects
@@ -151,7 +221,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount"
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -159,11 +229,12 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property "Datasheet" " ~"
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -171,11 +242,12 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -183,23 +255,30 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
-		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/d6759e1a-789d-43d0-a666-13ca1f29470a")
-		(sheetname "Root")
-		(sheetfile "915-yagi.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start 0.25 -2.76)
-			(end -0.25 -2.76)
+			(start -1.95 -1.71)
+			(end -0.84 -1.71)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "9ff9737c-1f85-4de9-aec3-1d6fd3ccb783")
+			(uuid "391fddbb-62b5-44d7-9ae4-f5284a73f570")
+		)
+		(fp_line
+			(start -1.95 2)
+			(end -0.84 2)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "eaf11347-82a4-4e43-b5ec-e938adaffa37")
 		)
 		(fp_line
 			(start -0.25 -2.76)
@@ -222,6 +301,16 @@
 			(uuid "89ba2c43-a592-48ec-9fda-18ad277a6793")
 		)
 		(fp_line
+			(start 0.25 -2.76)
+			(end -0.25 -2.76)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9ff9737c-1f85-4de9-aec3-1d6fd3ccb783")
+		)
+		(fp_line
 			(start 0.84 -1.71)
 			(end 1.95 -1.71)
 			(stroke
@@ -232,16 +321,6 @@
 			(uuid "137807bf-6b9e-4c09-b7b6-9a3b9e1b9309")
 		)
 		(fp_line
-			(start -1.95 -1.71)
-			(end -0.84 -1.71)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "391fddbb-62b5-44d7-9ae4-f5284a73f570")
-		)
-		(fp_line
 			(start 0.84 2)
 			(end 1.95 2)
 			(stroke
@@ -250,16 +329,6 @@
 			)
 			(layer "F.SilkS")
 			(uuid "4e9cced0-01a6-4af0-a04a-7481f0b8e999")
-		)
-		(fp_line
-			(start -1.95 2)
-			(end -0.84 2)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "eaf11347-82a4-4e43-b5ec-e938adaffa37")
 		)
 		(fp_line
 			(start 4.1 2.1)
@@ -282,34 +351,14 @@
 			(uuid "f6f21e9c-4730-4341-9a01-05ba9635bbec")
 		)
 		(fp_line
-			(start 4 2.6)
-			(end 4 -2.6)
+			(start -4 2.6)
+			(end -4 -2.6)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "B.CrtYd")
-			(uuid "563ea49c-37c5-42f4-86bf-dd68e0b7f4e2")
-		)
-		(fp_line
-			(start 4 2.6)
-			(end 3.68 2.6)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "B.CrtYd")
-			(uuid "5a9820b9-317c-4c3f-8eff-6de464b5942e")
-		)
-		(fp_line
-			(start 3.68 2.6)
-			(end 3.68 12.12)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "B.CrtYd")
-			(uuid "b56f67fd-2439-49f4-83db-b5b0c1b7b20c")
+			(uuid "194eac63-1f66-4802-a501-e3df3718c7ba")
 		)
 		(fp_line
 			(start -3.68 2.6)
@@ -322,14 +371,24 @@
 			(uuid "e21063a2-c3e4-441c-908f-f4b174fb9199")
 		)
 		(fp_line
-			(start -4 2.6)
-			(end -4 -2.6)
+			(start -3.68 12.12)
+			(end -3.68 2.6)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "B.CrtYd")
-			(uuid "194eac63-1f66-4802-a501-e3df3718c7ba")
+			(uuid "94d07b49-f0de-4502-8d88-b4e744fd57be")
+		)
+		(fp_line
+			(start 3.68 2.6)
+			(end 3.68 12.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "b56f67fd-2439-49f4-83db-b5b0c1b7b20c")
 		)
 		(fp_line
 			(start 3.68 12.12)
@@ -342,14 +401,24 @@
 			(uuid "799c9a72-1039-4a70-bc59-be36c8287bc5")
 		)
 		(fp_line
-			(start -3.68 12.12)
-			(end -3.68 2.6)
+			(start 4 2.6)
+			(end 3.68 2.6)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "B.CrtYd")
-			(uuid "94d07b49-f0de-4502-8d88-b4e744fd57be")
+			(uuid "5a9820b9-317c-4c3f-8eff-6de464b5942e")
+		)
+		(fp_line
+			(start 4 2.6)
+			(end 4 -2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "563ea49c-37c5-42f4-86bf-dd68e0b7f4e2")
 		)
 		(fp_line
 			(start -4 -2.6)
@@ -362,34 +431,14 @@
 			(uuid "dda2d89a-f4f8-4ce6-ae24-7cc498a009fb")
 		)
 		(fp_line
-			(start 4 2.6)
-			(end 4 -2.6)
+			(start -4 2.6)
+			(end -4 -2.6)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "691136ca-8ca5-438f-8436-653a0bba0917")
-		)
-		(fp_line
-			(start 3.68 2.6)
-			(end 4 2.6)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "4354cf9f-2f7b-45a7-bdfb-781d68d59379")
-		)
-		(fp_line
-			(start 3.68 2.6)
-			(end 3.68 12.12)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "4c5c0eba-91d9-4b72-96c3-290fa6f1d5c1")
+			(uuid "a231e3f2-9630-4f5d-a1d0-138147d106ee")
 		)
 		(fp_line
 			(start -3.68 2.6)
@@ -402,14 +451,34 @@
 			(uuid "1f4a25ec-6e2d-4d3e-a427-8d753473729e")
 		)
 		(fp_line
-			(start -4 2.6)
-			(end -4 -2.6)
+			(start -3.68 12.12)
+			(end -3.68 2.6)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "a231e3f2-9630-4f5d-a1d0-138147d106ee")
+			(uuid "5ae5164f-decf-49cc-a25a-f819a68792b0")
+		)
+		(fp_line
+			(start 3.68 2.6)
+			(end 3.68 12.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4c5c0eba-91d9-4b72-96c3-290fa6f1d5c1")
+		)
+		(fp_line
+			(start 3.68 2.6)
+			(end 4 2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4354cf9f-2f7b-45a7-bdfb-781d68d59379")
 		)
 		(fp_line
 			(start 3.68 12.12)
@@ -422,54 +491,14 @@
 			(uuid "9c604051-4388-4586-8a62-fc7d23ec664c")
 		)
 		(fp_line
-			(start -3.68 12.12)
-			(end -3.68 2.6)
+			(start 4 2.6)
+			(end 4 -2.6)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "5ae5164f-decf-49cc-a25a-f819a68792b0")
-		)
-		(fp_line
-			(start 3.175 -1.71)
-			(end 2.365 -1.71)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "302d317f-a945-4edb-a7d3-be60a3ab486f")
-		)
-		(fp_line
-			(start 3.175 -1.71)
-			(end 3.175 11.62)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "77e122c2-a609-47a5-a783-3d804b53a46e")
-		)
-		(fp_line
-			(start 2.365 -1.71)
-			(end 2.365 2.1)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "e0fa034e-4200-4ec4-908c-de50a34d4b7b")
-		)
-		(fp_line
-			(start -2.365 -1.71)
-			(end -3.175 -1.71)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "402ce130-1724-479b-8dcd-75c03a34cf8b")
+			(uuid "691136ca-8ca5-438f-8436-653a0bba0917")
 		)
 		(fp_line
 			(start -3.175 -1.71)
@@ -482,24 +511,14 @@
 			(uuid "6e0f8868-19e6-4c19-8de8-a0b6f2366ebc")
 		)
 		(fp_line
-			(start 2.365 2.1)
-			(end -2.365 2.1)
+			(start -2.365 -1.71)
+			(end -3.175 -1.71)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "8203c5db-1a3f-46cf-88e6-2642516c828e")
-		)
-		(fp_line
-			(start 0.64 2.1)
-			(end 0 3.1)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "b2ba58fd-1de0-4dde-8b5e-600995552e0c")
+			(uuid "402ce130-1724-479b-8dcd-75c03a34cf8b")
 		)
 		(fp_line
 			(start -2.365 2.1)
@@ -522,6 +541,36 @@
 			(uuid "77f1da79-c42c-42c0-b39c-f6762f5e046b")
 		)
 		(fp_line
+			(start 0.64 2.1)
+			(end 0 3.1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b2ba58fd-1de0-4dde-8b5e-600995552e0c")
+		)
+		(fp_line
+			(start 2.365 -1.71)
+			(end 2.365 2.1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e0fa034e-4200-4ec4-908c-de50a34d4b7b")
+		)
+		(fp_line
+			(start 2.365 2.1)
+			(end -2.365 2.1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8203c5db-1a3f-46cf-88e6-2642516c828e")
+		)
+		(fp_line
 			(start 3.165 11.62)
 			(end -3.165 11.62)
 			(stroke
@@ -531,8 +580,28 @@
 			(layer "F.Fab")
 			(uuid "fde97a9b-a764-4bf0-ae43-bf0df4c00693")
 		)
+		(fp_line
+			(start 3.175 -1.71)
+			(end 2.365 -1.71)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "302d317f-a945-4edb-a7d3-be60a3ab486f")
+		)
+		(fp_line
+			(start 3.175 -1.71)
+			(end 3.175 11.62)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "77e122c2-a609-47a5-a783-3d804b53a46e")
+		)
 		(fp_text user "PCB Edge"
-			(at 0 2.6 -90)
+			(at 0 2.6 360)
 			(layer "Dwgs.User")
 			(uuid "0be1eec2-4008-41db-9068-254b1109b5eb")
 			(effects
@@ -543,7 +612,7 @@
 			)
 		)
 		(fp_text user "Board Thickness: 1.57mm"
-			(at 0 -5.45 -90)
+			(at 0 -5.45 360)
 			(layer "Cmts.User")
 			(uuid "96fedeb6-477f-4794-be57-87b5a6f247e8")
 			(effects
@@ -554,7 +623,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 4.79 -90)
+			(at 0 4.79 360)
 			(layer "F.Fab")
 			(uuid "8004323b-91c1-4cf1-bb67-45cfe45abee1")
 			(effects
@@ -565,7 +634,7 @@
 			)
 		)
 		(pad "1" smd rect
-			(at 0 0.2 90)
+			(at 0 0.2)
 			(size 1.27 3.6)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 1 "ANT")
@@ -574,7 +643,7 @@
 			(uuid "5060701e-3bb7-4788-bbfe-8b43662c55b9")
 		)
 		(pad "2" smd rect
-			(at -2.825 0 90)
+			(at -2.825 0)
 			(size 1.35 4.2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(net 2 "GND")
@@ -583,7 +652,7 @@
 			(uuid "5d52678f-513a-4cdf-98ff-5cf31684dbfa")
 		)
 		(pad "2" smd rect
-			(at -2.825 0 90)
+			(at -2.825 0)
 			(size 1.35 4.2)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(net 2 "GND")
@@ -592,7 +661,7 @@
 			(uuid "b8475fd7-f819-4c00-845e-8fe41f9a6664")
 		)
 		(pad "2" smd rect
-			(at 2.825 0 90)
+			(at 2.825 0)
 			(size 1.35 4.2)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(pinfunction "Ext")
@@ -600,7 +669,614 @@
 			(uuid "d5fad4eb-457c-46ae-8a4f-6bf7b174e930")
 		)
 		(pad "2" smd rect
-			(at 2.825 0 90)
+			(at 2.825 0)
+			(size 1.35 4.2)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 2 "GND")
+			(pinfunction "Ext")
+			(pintype "passive")
+			(uuid "efd5d193-a065-4aaa-919a-c2e52568a3f5")
+		)
+		(model "${KICAD8_3DMODEL_DIR}/Connector_Coaxial.3dshapes/SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "MountingHole:MountingHole_6.4mm_M6"
+		(layer "F.Cu")
+		(uuid "3fe00854-58ab-4015-87c9-f0624a442469")
+		(at 38.1 57.785)
+		(descr "Mounting Hole 6.4mm, no annular, M6")
+		(tags "mounting hole 6.4mm no annular m6")
+		(property "Reference" "REF**"
+			(at 0 -7.4 0)
+			(layer "F.SilkS")
+			(uuid "d05cd618-3827-4a9c-9ce1-d846ff8e03b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_6.4mm_M6"
+			(at 0 7.4 0)
+			(layer "F.Fab")
+			(uuid "d080ecaf-3742-4fb0-9993-5554b1315304")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_6.4mm_M6"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83ccaa77-b29b-4c0f-938f-01006173a43d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d04c9d4f-fd2a-4157-b7a5-a0df823846f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c78983c3-f3bf-4d23-9630-2b6f18502682")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr exclude_from_pos_files exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 6.4 0)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(fill none)
+			(layer "Cmts.User")
+			(uuid "cc69144e-6cb3-4b0a-83af-c33bbac3b168")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 6.65 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill none)
+			(layer "F.CrtYd")
+			(uuid "4df3e68e-c429-4ee9-982b-f8f21b983359")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "a92e94d4-a762-4736-99a5-966a0bc842c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "" np_thru_hole circle
+			(at 0 0)
+			(size 6.4 6.4)
+			(drill 6.4)
+			(layers "*.Cu" "*.Mask")
+			(uuid "2763c8cc-1ecb-4f30-a57f-e7f3f6003960")
+		)
+	)
+	(footprint "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount"
+		(layer "F.Cu")
+		(uuid "a3455308-9569-4a46-a839-e2163e0d9545")
+		(at 99.775 95.2775)
+		(descr "Connector SMA, 0Hz to 20GHz, 50Ohm, Edge Mount (http://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf)")
+		(tags "SMA Straight Samtec Edge Mount")
+		(property "Reference" "J1"
+			(at 0 -3.5 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ba238a6c-1502-48a5-9617-193999ce792e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 0 13 0)
+			(layer "F.Fab")
+			(uuid "c884b226-8918-4b98-979d-d653c41a8309")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "094e2b89-bc09-4adc-8721-487af849511c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" " ~"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82b879a2-c121-4d86-8ba9-eb695b2b1de5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4773f4fc-08bd-471a-a37f-2112a9e2942c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(attr smd)
+		(fp_line
+			(start -1.95 -1.71)
+			(end -0.84 -1.71)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "391fddbb-62b5-44d7-9ae4-f5284a73f570")
+		)
+		(fp_line
+			(start -1.95 2)
+			(end -0.84 2)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "eaf11347-82a4-4e43-b5ec-e938adaffa37")
+		)
+		(fp_line
+			(start -0.25 -2.76)
+			(end 0 -2.26)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1681939e-45c7-4704-a671-84794e4311ad")
+		)
+		(fp_line
+			(start 0 -2.26)
+			(end 0.25 -2.76)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "89ba2c43-a592-48ec-9fda-18ad277a6793")
+		)
+		(fp_line
+			(start 0.25 -2.76)
+			(end -0.25 -2.76)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9ff9737c-1f85-4de9-aec3-1d6fd3ccb783")
+		)
+		(fp_line
+			(start 0.84 -1.71)
+			(end 1.95 -1.71)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "137807bf-6b9e-4c09-b7b6-9a3b9e1b9309")
+		)
+		(fp_line
+			(start 0.84 2)
+			(end 1.95 2)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4e9cced0-01a6-4af0-a04a-7481f0b8e999")
+		)
+		(fp_line
+			(start 4.1 2.1)
+			(end -4.1 2.1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "Dwgs.User")
+			(uuid "b324d759-addb-4412-811c-181675f3f70a")
+		)
+		(fp_line
+			(start -4 -2.6)
+			(end 4 -2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "f6f21e9c-4730-4341-9a01-05ba9635bbec")
+		)
+		(fp_line
+			(start -4 2.6)
+			(end -4 -2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "194eac63-1f66-4802-a501-e3df3718c7ba")
+		)
+		(fp_line
+			(start -3.68 2.6)
+			(end -4 2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "e21063a2-c3e4-441c-908f-f4b174fb9199")
+		)
+		(fp_line
+			(start -3.68 12.12)
+			(end -3.68 2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "94d07b49-f0de-4502-8d88-b4e744fd57be")
+		)
+		(fp_line
+			(start 3.68 2.6)
+			(end 3.68 12.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "b56f67fd-2439-49f4-83db-b5b0c1b7b20c")
+		)
+		(fp_line
+			(start 3.68 12.12)
+			(end -3.68 12.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "799c9a72-1039-4a70-bc59-be36c8287bc5")
+		)
+		(fp_line
+			(start 4 2.6)
+			(end 3.68 2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "5a9820b9-317c-4c3f-8eff-6de464b5942e")
+		)
+		(fp_line
+			(start 4 2.6)
+			(end 4 -2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "B.CrtYd")
+			(uuid "563ea49c-37c5-42f4-86bf-dd68e0b7f4e2")
+		)
+		(fp_line
+			(start -4 -2.6)
+			(end 4 -2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "dda2d89a-f4f8-4ce6-ae24-7cc498a009fb")
+		)
+		(fp_line
+			(start -4 2.6)
+			(end -4 -2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a231e3f2-9630-4f5d-a1d0-138147d106ee")
+		)
+		(fp_line
+			(start -3.68 2.6)
+			(end -4 2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1f4a25ec-6e2d-4d3e-a427-8d753473729e")
+		)
+		(fp_line
+			(start -3.68 12.12)
+			(end -3.68 2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5ae5164f-decf-49cc-a25a-f819a68792b0")
+		)
+		(fp_line
+			(start 3.68 2.6)
+			(end 3.68 12.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4c5c0eba-91d9-4b72-96c3-290fa6f1d5c1")
+		)
+		(fp_line
+			(start 3.68 2.6)
+			(end 4 2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4354cf9f-2f7b-45a7-bdfb-781d68d59379")
+		)
+		(fp_line
+			(start 3.68 12.12)
+			(end -3.68 12.12)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9c604051-4388-4586-8a62-fc7d23ec664c")
+		)
+		(fp_line
+			(start 4 2.6)
+			(end 4 -2.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "691136ca-8ca5-438f-8436-653a0bba0917")
+		)
+		(fp_line
+			(start -3.175 -1.71)
+			(end -3.175 11.62)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6e0f8868-19e6-4c19-8de8-a0b6f2366ebc")
+		)
+		(fp_line
+			(start -2.365 -1.71)
+			(end -3.175 -1.71)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "402ce130-1724-479b-8dcd-75c03a34cf8b")
+		)
+		(fp_line
+			(start -2.365 2.1)
+			(end -2.365 -1.71)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "46ec41e4-d91b-4736-ab7d-370008f5dc01")
+		)
+		(fp_line
+			(start 0 3.1)
+			(end -0.64 2.1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "77f1da79-c42c-42c0-b39c-f6762f5e046b")
+		)
+		(fp_line
+			(start 0.64 2.1)
+			(end 0 3.1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b2ba58fd-1de0-4dde-8b5e-600995552e0c")
+		)
+		(fp_line
+			(start 2.365 -1.71)
+			(end 2.365 2.1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e0fa034e-4200-4ec4-908c-de50a34d4b7b")
+		)
+		(fp_line
+			(start 2.365 2.1)
+			(end -2.365 2.1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8203c5db-1a3f-46cf-88e6-2642516c828e")
+		)
+		(fp_line
+			(start 3.165 11.62)
+			(end -3.165 11.62)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fde97a9b-a764-4bf0-ae43-bf0df4c00693")
+		)
+		(fp_line
+			(start 3.175 -1.71)
+			(end 2.365 -1.71)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "302d317f-a945-4edb-a7d3-be60a3ab486f")
+		)
+		(fp_line
+			(start 3.175 -1.71)
+			(end 3.175 11.62)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "77e122c2-a609-47a5-a783-3d804b53a46e")
+		)
+		(fp_text user "PCB Edge"
+			(at 0 2.6 0)
+			(layer "Dwgs.User")
+			(uuid "0be1eec2-4008-41db-9068-254b1109b5eb")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(fp_text user "Board Thickness: 1.57mm"
+			(at 0 -5.45 0)
+			(layer "Cmts.User")
+			(uuid "96fedeb6-477f-4794-be57-87b5a6f247e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 4.79 0)
+			(layer "F.Fab")
+			(uuid "8004323b-91c1-4cf1-bb67-45cfe45abee1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 0.2)
+			(size 1.27 3.6)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 1 "ANT")
+			(pinfunction "In")
+			(pintype "passive")
+			(uuid "5060701e-3bb7-4788-bbfe-8b43662c55b9")
+		)
+		(pad "2" smd rect
+			(at -2.825 0)
+			(size 1.35 4.2)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(net 2 "GND")
+			(pinfunction "Ext")
+			(pintype "passive")
+			(uuid "5d52678f-513a-4cdf-98ff-5cf31684dbfa")
+		)
+		(pad "2" smd rect
+			(at -2.825 0)
+			(size 1.35 4.2)
+			(layers "B.Cu" "B.Paste" "B.Mask")
+			(net 2 "GND")
+			(pinfunction "Ext")
+			(pintype "passive")
+			(uuid "b8475fd7-f819-4c00-845e-8fe41f9a6664")
+		)
+		(pad "2" smd rect
+			(at 2.825 0)
+			(size 1.35 4.2)
+			(layers "F.Cu" "F.Paste" "F.Mask")
+			(pinfunction "Ext")
+			(pintype "passive")
+			(uuid "d5fad4eb-457c-46ae-8a4f-6bf7b174e930")
+		)
+		(pad "2" smd rect
+			(at 2.825 0)
 			(size 1.35 4.2)
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(net 2 "GND")
@@ -622,8 +1298,8 @@
 	)
 	(gr_poly
 		(pts
-			(xy 88.75 31) (xy 84.75 31) (xy 84.75 105.5) (xy 86.25 105.5) (xy 86.25 109.5) (xy 84.75 109.5) (xy 84.75 184)
-			(xy 88.75 184)
+			(xy 32.178 52.68) (xy 32.178 63.105) (xy 44.398 63.105) (xy 44.398 52.68) (xy 194.584 52.68) (xy 194.584 48.68)
+			(xy 19.584 48.68) (xy 19.584 52.68)
 		)
 		(stroke
 			(width 0.05)
@@ -631,12 +1307,12 @@
 		)
 		(fill none)
 		(layer "Edge.Cuts")
-		(uuid "3b361d1e-1aea-4424-8c05-ac4d5b0b4ad2")
+		(uuid "45ab72f4-df6c-423e-affe-8fda49436cfa")
 	)
 	(gr_poly
 		(pts
-			(xy 81.75 31) (xy 77.75 31) (xy 77.75 105.5) (xy 79.25 105.5) (xy 79.25 109.5) (xy 77.75 109.5) (xy 77.75 184)
-			(xy 81.75 184)
+			(xy 172.57 70.85) (xy 172.57 66.85) (xy 98.07 66.85) (xy 98.07 68.35) (xy 94.07 68.35) (xy 94.07 66.85)
+			(xy 19.57 66.85) (xy 19.57 70.85)
 		)
 		(stroke
 			(width 0.05)
@@ -644,23 +1320,13 @@
 		)
 		(fill none)
 		(layer "Edge.Cuts")
-		(uuid "464c4f8e-7e90-40d8-863e-99ed3699e060")
-	)
-	(gr_rect
-		(start 17.5 17.5)
-		(end 192.5 21.5)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(fill none)
-		(layer "Edge.Cuts")
-		(uuid "5e1ab7f9-7cd2-4a20-9d2e-e4237bf25b30")
+		(uuid "48f91ac5-23f0-4855-87ba-79daa36fb257")
 	)
 	(gr_poly
 		(pts
-			(xy 55.5 26) (xy 51.5 26) (xy 51.5 105.5) (xy 53 105.5) (xy 53 109.5) (xy 51.5 109.5) (xy 51.5 189)
-			(xy 55.5 189)
+			(xy 104.775 40.005) (xy 104.775 46.505) (xy 94.775 46.505) (xy 94.775 40.005) (xy 19.775 40.005)
+			(xy 19.775 36.005) (xy 97.775 36.005) (xy 97.775 37.605) (xy 101.875 37.605) (xy 101.875 36.005)
+			(xy 179.875 36.005) (xy 179.875 40.005)
 		)
 		(stroke
 			(width 0.05)
@@ -668,12 +1334,12 @@
 		)
 		(fill none)
 		(layer "Edge.Cuts")
-		(uuid "b87c14b4-0a13-4c21-9ea5-eecb858381b6")
+		(uuid "5b68fb2d-1f76-4ce7-b644-b261b640fcd4")
 	)
 	(gr_poly
 		(pts
-			(xy 65.5 102.5) (xy 72 102.5) (xy 72 112.5) (xy 65.5 112.5) (xy 65.5 187.5) (xy 61.5 187.5) (xy 61.5 109.5)
-			(xy 63.1 109.5) (xy 63.1 105.4) (xy 61.5 105.4) (xy 61.5 27.4) (xy 65.5 27.4)
+			(xy 182.685 33.21) (xy 182.685 29.21) (xy 103.185 29.21) (xy 103.185 30.71) (xy 99.185 30.71) (xy 99.185 29.21)
+			(xy 19.685 29.21) (xy 19.685 33.21)
 		)
 		(stroke
 			(width 0.05)
@@ -681,38 +1347,90 @@
 		)
 		(fill none)
 		(layer "Edge.Cuts")
-		(uuid "d6ac70f4-fc36-48f4-9616-3aef31880230")
+		(uuid "63f5d143-d2e3-45e2-889f-3c5f5e5a2237")
 	)
-	(gr_text "DIR"
-		(at 87.75 183.25 90)
-		(layer "F.Cu" knockout)
-		(uuid "03ae4a0e-241b-4cdf-8df3-79b6e4cb2005")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify left bottom)
+	(gr_poly
+		(pts
+			(xy 182.685 84.645) (xy 182.685 80.645) (xy 103.185 80.645) (xy 103.185 82.145) (xy 99.185 82.145)
+			(xy 99.185 80.645) (xy 19.685 80.645) (xy 19.685 84.645)
 		)
-	)
-	(gr_text "DIR"
-		(at 80.75 183.25 90)
-		(layer "F.Cu" knockout)
-		(uuid "1d36f86f-1020-46e4-9977-dbdf45d01336")
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.3)
-				(bold yes)
-			)
-			(justify left bottom)
+		(stroke
+			(width 0.05)
+			(type solid)
 		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "71d3b626-43c6-45b1-b11a-17977f41d860")
 	)
-	(gr_text "REF"
-		(at 54.5 188.25 90)
+	(gr_poly
+		(pts
+			(xy 104.775 91.44) (xy 104.775 97.94) (xy 94.775 97.94) (xy 94.775 91.44) (xy 19.775 91.44) (xy 19.775 87.44)
+			(xy 97.775 87.44) (xy 97.775 89.04) (xy 101.875 89.04) (xy 101.875 87.44) (xy 179.875 87.44) (xy 179.875 91.44)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "9893daf4-783b-419b-a67a-64079e7f60c1")
+	)
+	(gr_poly
+		(pts
+			(xy 172.57 19.415) (xy 172.57 15.415) (xy 98.07 15.415) (xy 98.07 16.915) (xy 94.07 16.915) (xy 94.07 15.415)
+			(xy 19.57 15.415) (xy 19.57 19.415)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "abc09018-ed9c-4812-a273-03326b9bd1e9")
+	)
+	(gr_poly
+		(pts
+			(xy 32.178 104.115) (xy 32.178 114.54) (xy 44.398 114.54) (xy 44.398 104.115) (xy 194.584 104.115)
+			(xy 194.584 100.115) (xy 19.584 100.115) (xy 19.584 104.115)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "d87a6c76-bf59-4d3f-810e-5f82bd9b3215")
+	)
+	(gr_poly
+		(pts
+			(xy 172.555 77.66) (xy 172.555 73.66) (xy 98.055 73.66) (xy 98.055 75.16) (xy 94.055 75.16) (xy 94.055 73.66)
+			(xy 19.555 73.66) (xy 19.555 77.66)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "de13734a-187f-4221-af5d-bd85754bfa4d")
+	)
+	(gr_poly
+		(pts
+			(xy 172.555 26.225) (xy 172.555 22.225) (xy 98.055 22.225) (xy 98.055 23.725) (xy 94.055 23.725)
+			(xy 94.055 22.225) (xy 19.555 22.225) (xy 19.555 26.225)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "ebfd3c5d-bb59-46af-97f0-3295a82d5715")
+	)
+	(gr_text "DE"
+		(at 91.345 52.205 0)
 		(layer "F.Cu" knockout)
-		(uuid "45926ab3-fa77-4164-aa5b-0293aed85b68")
+		(uuid "0915e852-fd9d-47f2-b9a0-ab9927abb5a3")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -723,9 +1441,9 @@
 		)
 	)
 	(gr_text "D2"
-		(at 184.25 21 0)
+		(at 186.345 52.205 0)
 		(layer "F.Cu" knockout)
-		(uuid "60fd0ddc-f922-4b43-9be8-1f086df195b2")
+		(uuid "0c337268-fa27-4d70-ae5a-ddbf81e9061b")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -735,10 +1453,10 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "D1"
-		(at 117.25 21 0)
+	(gr_text "DIR"
+		(at 20.305 25.225 0)
 		(layer "F.Cu" knockout)
-		(uuid "6a221b1e-8dc7-44db-b1c0-6c803af2264a")
+		(uuid "5667ca7b-a601-4a38-8224-045506b871d9")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -749,9 +1467,22 @@
 		)
 	)
 	(gr_text "DE"
-		(at 89.25 21 0)
+		(at 91.345 103.64 0)
 		(layer "F.Cu" knockout)
-		(uuid "9be64a4a-83f6-447b-8272-fbea902585d7")
+		(uuid "732bf4b0-bac4-4919-a5fd-089f6324fa92")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "DIR"
+		(at 20.305 76.66 0)
+		(layer "F.Cu" knockout)
+		(uuid "7f486bee-ba4e-43ac-b371-d3377287f125")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -762,9 +1493,113 @@
 		)
 	)
 	(gr_text "R"
-		(at 17.5 21 0)
+		(at 19.595 52.205 0)
 		(layer "F.Cu" knockout)
-		(uuid "d137f791-e0db-457a-aac6-1ce804104764")
+		(uuid "8b13c3a0-6da6-491a-93b2-cebb4d74a03d")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "D1"
+		(at 119.345 103.64 0)
+		(layer "F.Cu" knockout)
+		(uuid "9139d41a-27f3-441d-956f-9bcf235731a6")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "REF"
+		(at 20.435 83.645 0)
+		(layer "F.Cu" knockout)
+		(uuid "ac0b3453-132c-4d19-9076-3277c812c2cf")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "D1"
+		(at 119.345 52.205 0)
+		(layer "F.Cu" knockout)
+		(uuid "b242e108-755e-404a-bed5-b7aafe7729b4")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "DIR"
+		(at 20.32 18.415 0)
+		(layer "F.Cu" knockout)
+		(uuid "ba816989-0c90-43e8-9488-6515939e3dc3")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "R"
+		(at 19.595 103.64 0)
+		(layer "F.Cu" knockout)
+		(uuid "c1d4981b-7460-4320-b28d-3da07f9cfb84")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "DIR"
+		(at 20.32 69.85 0)
+		(layer "F.Cu" knockout)
+		(uuid "d12e97a7-3ded-4c95-9759-ee00acbd573b")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "REF"
+		(at 20.435 32.21 0)
+		(layer "F.Cu" knockout)
+		(uuid "d77d2845-847d-4a5a-8629-c47c8aaa428e")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "D2"
+		(at 186.345 103.64 0)
+		(layer "F.Cu" knockout)
+		(uuid "def867a8-62da-4dfc-9774-6f9ec78a40ef")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -775,81 +1610,74 @@
 		)
 	)
 	(segment
-		(start 65.75 105.25)
-		(end 65.25 104.75)
+		(start 99.775 94.07)
+		(end 102.659 91.186)
 		(width 0.6096)
 		(layer "F.Cu")
 		(net 1)
-		(uuid "2104f2ef-5de3-45cb-8a89-03059ad4e39b")
+		(uuid "590c1a1a-a554-4e80-8aa1-124c8b286c86")
 	)
 	(segment
-		(start 68 107.5)
-		(end 65.75 105.25)
+		(start 102.659 91.186)
+		(end 102.659 89.916)
 		(width 0.6096)
 		(layer "F.Cu")
 		(net 1)
-		(uuid "2e95078e-9d30-4b16-a5e9-e2da266f82df")
+		(uuid "5ad59d51-5da9-4e80-8a2e-994b85f1e491")
 	)
 	(segment
-		(start 69.5375 107.5)
-		(end 68 107.5)
+		(start 102.659 39.751)
+		(end 102.659 38.481)
 		(width 0.6096)
 		(layer "F.Cu")
 		(net 1)
-		(uuid "7904648f-a62d-4f15-b311-527914b526a7")
+		(uuid "a27cf38d-2080-443d-be6f-bb9d0747414c")
 	)
 	(segment
-		(start 66.175 110.325)
-		(end 63.5 113)
+		(start 99.775 42.635)
+		(end 102.659 39.751)
+		(width 0.6096)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "c9b44a9e-75f4-46fd-aa12-bdd0a7265540")
+	)
+	(segment
+		(start 96.95 95.2775)
+		(end 96.95 92.115)
 		(width 0.6096)
 		(layer "F.Cu")
 		(net 2)
-		(uuid "ed7fba3e-333b-4e91-9286-39d9383b6ffd")
+		(uuid "350c55b7-b06a-45d6-b21d-72f0bca88376")
 	)
 	(segment
-		(start 69.3375 110.325)
-		(end 66.175 110.325)
+		(start 96.95 92.115)
+		(end 96.95 90.049)
 		(width 0.6096)
 		(layer "F.Cu")
 		(net 2)
-		(uuid "edae23fb-b865-4285-8dd0-4e52768cfc10")
+		(uuid "932b5c05-df1d-4ce8-93b0-3a49a8c82fd6")
 	)
-	(zone
-		(net 1)
-		(net_name "ANT")
+	(segment
+		(start 96.95 43.8425)
+		(end 96.95 40.68)
+		(width 0.6096)
 		(layer "F.Cu")
-		(uuid "1a82dbc0-4581-4e41-89b7-af7473e15685")
-		(hatch edge 0.5)
-		(priority 1)
-		(connect_pads
-			(clearance 0)
-		)
-		(min_thickness 0.25)
-		(filled_areas_thickness no)
-		(fill yes
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-		)
-		(polygon
-			(pts
-				(xy 65.5 27) (xy 61.5 27) (xy 61.5 105) (xy 65.5 105)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(pts
-				(xy 65.443039 27.419685) (xy 65.488794 27.472489) (xy 65.5 27.524) (xy 65.5 104.876) (xy 65.480315 104.943039)
-				(xy 65.427511 104.988794) (xy 65.376 105) (xy 61.624 105) (xy 61.556961 104.980315) (xy 61.511206 104.927511)
-				(xy 61.5 104.876) (xy 61.5 27.524) (xy 61.519685 27.456961) (xy 61.572489 27.411206) (xy 61.624 27.4)
-				(xy 65.376 27.4)
-			)
-		)
+		(net 2)
+		(uuid "aa404fba-a762-4552-a6d0-68ca54d5887d")
+	)
+	(segment
+		(start 96.95 40.68)
+		(end 96.95 38.614)
+		(width 0.6096)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "dacb80d7-4f30-43c3-9907-186990140ba1")
 	)
 	(zone
 		(net 0)
 		(net_name "")
 		(layer "F.Cu")
-		(uuid "2771e535-6f78-41da-ab1a-abbeb2561a80")
+		(uuid "03ec5cb7-1a7a-4ed2-b0d9-8b70dfbe0afd")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -869,7 +1697,7 @@
 		)
 		(polygon
 			(pts
-				(xy 99 17.5) (xy 99 21.5) (xy 100 21.5) (xy 100 17.5)
+				(xy 21.345 49.455) (xy 23.095 49.455) (xy 23.095 48.705) (xy 21.345 48.705)
 			)
 		)
 	)
@@ -877,9 +1705,37 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Cu")
-		(uuid "2c8310e3-9153-4728-8246-6c682aa94432")
+		(uuid "060a00fb-f60e-4609-8863-e3ff0321050d")
 		(hatch edge 0.5)
-		(priority 4)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 21.345 100.89) (xy 23.095 100.89) (xy 23.095 100.14) (xy 21.345 100.14)
+			)
+		)
+	)
+	(zone
+		(net 1)
+		(net_name "ANT")
+		(layer "F.Cu")
+		(uuid "0e66b943-0382-4249-810b-0f9ee3db1d3c")
+		(hatch edge 0.5)
+		(priority 1)
 		(connect_pads
 			(clearance 0)
 		)
@@ -888,57 +1744,19 @@
 		(fill yes
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
 		)
 		(polygon
 			(pts
-				(xy 17.5 21.5) (xy 17.5 17.5) (xy 192.5 17.5) (xy 192.5 21.5)
+				(xy 180.275 91.44) (xy 180.275 87.44) (xy 102.275 87.44) (xy 102.275 91.44)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
-			(island)
 			(pts
-				(xy 19.193039 17.519685) (xy 19.238794 17.572489) (xy 19.25 17.624) (xy 19.25 18.25) (xy 21 18.25)
-				(xy 21 17.624) (xy 21.019685 17.556961) (xy 21.072489 17.511206) (xy 21.124 17.5) (xy 95.376 17.5)
-				(xy 95.443039 17.519685) (xy 95.488794 17.572489) (xy 95.5 17.624) (xy 95.5 21.376) (xy 95.480315 21.443039)
-				(xy 95.427511 21.488794) (xy 95.376 21.5) (xy 17.624 21.5) (xy 17.556961 21.480315) (xy 17.511206 21.427511)
-				(xy 17.5 21.376) (xy 17.5 21.161917) (xy 17.519685 21.094878) (xy 17.572489 21.049123) (xy 17.641647 21.039179)
-				(xy 17.705203 21.068204) (xy 17.711681 21.074236) (xy 17.747843 21.110398) (xy 19.221223 21.110398)
-				(xy 19.221223 21.109233) (xy 89.497843 21.109233) (xy 92.325463 21.109233) (xy 92.325463 18.992423)
-				(xy 89.497843 18.992423) (xy 89.497843 21.109233) (xy 19.221223 21.109233) (xy 19.221223 18.992423)
-				(xy 17.747843 18.992423) (xy 17.711681 19.028585) (xy 17.650358 19.06207) (xy 17.580666 19.057086)
-				(xy 17.524733 19.015214) (xy 17.500316 18.94975) (xy 17.5 18.940904) (xy 17.5 17.624) (xy 17.519685 17.556961)
-				(xy 17.572489 17.511206) (xy 17.624 17.5) (xy 19.126 17.5)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(island)
-			(pts
-				(xy 98.943039 17.519685) (xy 98.988794 17.572489) (xy 99 17.624) (xy 99 21.376) (xy 98.980315 21.443039)
-				(xy 98.927511 21.488794) (xy 98.876 21.5) (xy 96.624 21.5) (xy 96.556961 21.480315) (xy 96.511206 21.427511)
-				(xy 96.5 21.376) (xy 96.5 18.374) (xy 96.519685 18.306961) (xy 96.572489 18.261206) (xy 96.624 18.25)
-				(xy 98.25 18.25) (xy 98.25 17.624) (xy 98.269685 17.556961) (xy 98.322489 17.511206) (xy 98.374 17.5)
-				(xy 98.876 17.5)
-			)
-		)
-		(filled_polygon
-			(layer "F.Cu")
-			(island)
-			(pts
-				(xy 120.443039 17.519685) (xy 120.488794 17.572489) (xy 120.5 17.624) (xy 120.5 18.25) (xy 122.25 18.25)
-				(xy 122.25 17.624) (xy 122.269685 17.556961) (xy 122.322489 17.511206) (xy 122.374 17.5) (xy 187.376 17.5)
-				(xy 187.443039 17.519685) (xy 187.488794 17.572489) (xy 187.5 17.624) (xy 187.5 18.25) (xy 189.25 18.25)
-				(xy 189.25 17.624) (xy 189.269685 17.556961) (xy 189.322489 17.511206) (xy 189.374 17.5) (xy 192.376 17.5)
-				(xy 192.443039 17.519685) (xy 192.488794 17.572489) (xy 192.5 17.624) (xy 192.5 21.376) (xy 192.480315 21.443039)
-				(xy 192.427511 21.488794) (xy 192.376 21.5) (xy 100.124 21.5) (xy 100.056961 21.480315) (xy 100.011206 21.427511)
-				(xy 100 21.376) (xy 100 21.109233) (xy 117.497843 21.109233) (xy 120.396892 21.109233) (xy 184.497843 21.109233)
-				(xy 187.39863 21.109233) (xy 187.39863 18.992423) (xy 184.497843 18.992423) (xy 184.497843 21.109233)
-				(xy 120.396892 21.109233) (xy 120.396892 18.991222) (xy 117.497843 18.991222) (xy 117.497843 21.109233)
-				(xy 100 21.109233) (xy 100 17.624) (xy 100.019685 17.556961) (xy 100.072489 17.511206) (xy 100.124 17.5)
-				(xy 120.376 17.5)
+				(xy 179.818039 87.459685) (xy 179.863794 87.512489) (xy 179.875 87.564) (xy 179.875 91.316) (xy 179.855315 91.383039)
+				(xy 179.802511 91.428794) (xy 179.751 91.44) (xy 102.399 91.44) (xy 102.331961 91.420315) (xy 102.286206 91.367511)
+				(xy 102.275 91.316) (xy 102.275 87.564) (xy 102.294685 87.496961) (xy 102.347489 87.451206) (xy 102.399 87.44)
+				(xy 179.751 87.44)
 			)
 		)
 	)
@@ -946,9 +1764,36 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Cu")
-		(uuid "4a5a75fa-f085-4160-8a78-a41cdc2bd0f2")
+		(uuid "0f8d629a-4b69-4424-bdc3-bdaa02869530")
 		(hatch edge 0.5)
-		(priority 5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 124.345 100.14) (xy 122.595 100.14) (xy 122.595 100.89) (xy 124.345 100.89)
+			)
+		)
+	)
+	(zone
+		(net 2)
+		(net_name "GND")
+		(layer "F.Cu")
+		(uuid "1b9d8d99-a345-49f2-a1bf-b5a0528c4b84")
+		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
 		)
@@ -957,22 +1802,19 @@
 		(fill yes
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
-			(island_removal_mode 1)
-			(island_area_min 10)
 		)
 		(polygon
 			(pts
-				(xy 63.1 105.4) (xy 65 105.4) (xy 65 109.5) (xy 63.1 109.5)
+				(xy 19.775 40.005) (xy 19.775 36.005) (xy 97.275 36.005) (xy 97.275 40.005)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
-			(island)
 			(pts
-				(xy 64.943039 105.419685) (xy 64.988794 105.472489) (xy 65 105.524) (xy 65 109.376) (xy 64.980315 109.443039)
-				(xy 64.927511 109.488794) (xy 64.876 109.5) (xy 63.224 109.5) (xy 63.156961 109.480315) (xy 63.111206 109.427511)
-				(xy 63.1 109.376) (xy 63.1 105.524) (xy 63.119685 105.456961) (xy 63.172489 105.411206) (xy 63.224 105.4)
-				(xy 64.876 105.4)
+				(xy 97.218039 36.024685) (xy 97.263794 36.077489) (xy 97.275 36.129) (xy 97.275 39.881) (xy 97.255315 39.948039)
+				(xy 97.202511 39.993794) (xy 97.151 40.005) (xy 19.899 40.005) (xy 19.831961 39.985315) (xy 19.786206 39.932511)
+				(xy 19.775 39.881) (xy 19.775 36.129) (xy 19.794685 36.061961) (xy 19.847489 36.016206) (xy 19.899 36.005)
+				(xy 97.151 36.005)
 			)
 		)
 	)
@@ -980,7 +1822,35 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Cu")
-		(uuid "53803c12-4bdc-41ce-9180-6562e8f7c7e8")
+		(uuid "1e6f5e4f-4bdf-459f-9a03-8a821547eda4")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 97.595 100.14) (xy 97.595 104.14) (xy 98.595 104.14) (xy 98.595 100.14)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "2c7b8f3c-1a38-4b48-a9c1-2a21b22d06c4")
 		(hatch edge 0.5)
 		(priority 3)
 		(connect_pads
@@ -996,20 +1866,20 @@
 		)
 		(polygon
 			(pts
-				(xy 55.5 26) (xy 51.5 26) (xy 51.5 189) (xy 55.5 189)
+				(xy 182.685 33.21) (xy 182.685 29.21) (xy 19.685 29.21) (xy 19.685 33.21)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(island)
 			(pts
-				(xy 55.443039 26.019685) (xy 55.488794 26.072489) (xy 55.5 26.124) (xy 55.5 188.876) (xy 55.480315 188.943039)
-				(xy 55.427511 188.988794) (xy 55.376 189) (xy 51.624 189) (xy 51.556961 188.980315) (xy 51.511206 188.927511)
-				(xy 51.5 188.876) (xy 51.5 188.002156) (xy 52.492423 188.002156) (xy 54.610398 188.002156) (xy 54.610398 183.817393)
-				(xy 52.492423 183.817393) (xy 52.492423 188.002156) (xy 51.5 188.002156) (xy 51.5 109.624) (xy 51.519685 109.556961)
-				(xy 51.572489 109.511206) (xy 51.624 109.5) (xy 53 109.5) (xy 53 105.5) (xy 51.624 105.5) (xy 51.556961 105.480315)
-				(xy 51.511206 105.427511) (xy 51.5 105.376) (xy 51.5 26.124) (xy 51.519685 26.056961) (xy 51.572489 26.011206)
-				(xy 51.624 26) (xy 55.376 26)
+				(xy 99.128039 29.229685) (xy 99.173794 29.282489) (xy 99.185 29.334) (xy 99.185 30.71) (xy 103.185 30.71)
+				(xy 103.185 29.334) (xy 103.204685 29.266961) (xy 103.257489 29.221206) (xy 103.309 29.21) (xy 182.561 29.21)
+				(xy 182.628039 29.229685) (xy 182.673794 29.282489) (xy 182.685 29.334) (xy 182.685 33.086) (xy 182.665315 33.153039)
+				(xy 182.612511 33.198794) (xy 182.561 33.21) (xy 19.809 33.21) (xy 19.741961 33.190315) (xy 19.696206 33.137511)
+				(xy 19.685 33.086) (xy 19.685 32.320398) (xy 20.682843 32.320398) (xy 24.867606 32.320398) (xy 24.867606 30.202423)
+				(xy 20.682843 30.202423) (xy 20.682843 32.320398) (xy 19.685 32.320398) (xy 19.685 29.334) (xy 19.704685 29.266961)
+				(xy 19.757489 29.221206) (xy 19.809 29.21) (xy 99.061 29.21)
 			)
 		)
 	)
@@ -1017,7 +1887,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Cu")
-		(uuid "87c09374-eed1-48b0-9c71-4a923db7596c")
+		(uuid "3527aaa2-7d9e-4eea-ba93-1481fa2c23e2")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1037,7 +1907,7 @@
 		)
 		(polygon
 			(pts
-				(xy 189.25 17.5) (xy 187.5 17.5) (xy 187.5 18.25) (xy 189.25 18.25)
+				(xy 98.595 100.89) (xy 100.345 100.89) (xy 100.345 100.14) (xy 98.595 100.14)
 			)
 		)
 	)
@@ -1045,7 +1915,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Cu")
-		(uuid "c5db3351-b528-423b-a59b-96e39d84344d")
+		(uuid "36396823-978e-4c75-9f71-5c8858d7b0a0")
 		(hatch edge 0.5)
 		(priority 2)
 		(connect_pads
@@ -1061,20 +1931,20 @@
 		)
 		(polygon
 			(pts
-				(xy 84.75 31) (xy 88.75 31) (xy 88.75 184) (xy 84.75 184)
+				(xy 172.57 15.415) (xy 172.57 19.415) (xy 19.57 19.415) (xy 19.57 15.415)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(island)
 			(pts
-				(xy 88.693039 31.019685) (xy 88.738794 31.072489) (xy 88.75 31.124) (xy 88.75 183.876) (xy 88.730315 183.943039)
-				(xy 88.677511 183.988794) (xy 88.626 184) (xy 84.874 184) (xy 84.806961 183.980315) (xy 84.761206 183.927511)
-				(xy 84.75 183.876) (xy 84.75 183.002156) (xy 85.742423 183.002156) (xy 87.860398 183.002156) (xy 87.860398 179.31449)
-				(xy 85.742423 179.31449) (xy 85.742423 183.002156) (xy 84.75 183.002156) (xy 84.75 109.624) (xy 84.769685 109.556961)
-				(xy 84.822489 109.511206) (xy 84.874 109.5) (xy 86.25 109.5) (xy 86.25 105.5) (xy 84.874 105.5)
-				(xy 84.806961 105.480315) (xy 84.761206 105.427511) (xy 84.75 105.376) (xy 84.75 31.124) (xy 84.769685 31.056961)
-				(xy 84.822489 31.011206) (xy 84.874 31) (xy 88.626 31)
+				(xy 94.013039 15.434685) (xy 94.058794 15.487489) (xy 94.07 15.539) (xy 94.07 16.915) (xy 98.07 16.915)
+				(xy 98.07 15.539) (xy 98.089685 15.471961) (xy 98.142489 15.426206) (xy 98.194 15.415) (xy 172.446 15.415)
+				(xy 172.513039 15.434685) (xy 172.558794 15.487489) (xy 172.57 15.539) (xy 172.57 19.291) (xy 172.550315 19.358039)
+				(xy 172.497511 19.403794) (xy 172.446 19.415) (xy 19.694 19.415) (xy 19.626961 19.395315) (xy 19.581206 19.342511)
+				(xy 19.57 19.291) (xy 19.57 18.525398) (xy 20.567843 18.525398) (xy 24.255509 18.525398) (xy 24.255509 16.407423)
+				(xy 20.567843 16.407423) (xy 20.567843 18.525398) (xy 19.57 18.525398) (xy 19.57 15.539) (xy 19.589685 15.471961)
+				(xy 19.642489 15.426206) (xy 19.694 15.415) (xy 93.946 15.415)
 			)
 		)
 	)
@@ -1082,9 +1952,9 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Cu")
-		(uuid "c652124c-cec1-4ef4-8ee4-a2d41244b645")
+		(uuid "476618d0-9066-4de9-8536-4aaa6cc25dbd")
 		(hatch edge 0.5)
-		(priority 2)
+		(priority 5)
 		(connect_pads
 			(clearance 0)
 		)
@@ -1098,20 +1968,17 @@
 		)
 		(polygon
 			(pts
-				(xy 77.75 31) (xy 81.75 31) (xy 81.75 184) (xy 77.75 184)
+				(xy 101.621 89.04) (xy 101.621 90.94) (xy 98.029 90.94) (xy 98.029 89.04)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(island)
 			(pts
-				(xy 81.693039 31.019685) (xy 81.738794 31.072489) (xy 81.75 31.124) (xy 81.75 183.876) (xy 81.730315 183.943039)
-				(xy 81.677511 183.988794) (xy 81.626 184) (xy 77.874 184) (xy 77.806961 183.980315) (xy 77.761206 183.927511)
-				(xy 77.75 183.876) (xy 77.75 183.002156) (xy 78.742423 183.002156) (xy 80.860398 183.002156) (xy 80.860398 179.31449)
-				(xy 78.742423 179.31449) (xy 78.742423 183.002156) (xy 77.75 183.002156) (xy 77.75 109.624) (xy 77.769685 109.556961)
-				(xy 77.822489 109.511206) (xy 77.874 109.5) (xy 79.25 109.5) (xy 79.25 105.5) (xy 77.874 105.5)
-				(xy 77.806961 105.480315) (xy 77.761206 105.427511) (xy 77.75 105.376) (xy 77.75 31.124) (xy 77.769685 31.056961)
-				(xy 77.822489 31.011206) (xy 77.874 31) (xy 81.626 31)
+				(xy 101.564039 89.059685) (xy 101.609794 89.112489) (xy 101.621 89.164) (xy 101.621 90.816) (xy 101.601315 90.883039)
+				(xy 101.548511 90.928794) (xy 101.497 90.94) (xy 98.153 90.94) (xy 98.085961 90.920315) (xy 98.040206 90.867511)
+				(xy 98.029 90.816) (xy 98.029 89.164) (xy 98.048685 89.096961) (xy 98.101489 89.051206) (xy 98.153 89.04)
+				(xy 101.497 89.04)
 			)
 		)
 	)
@@ -1119,7 +1986,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Cu")
-		(uuid "c9bf0609-1d13-44d9-8a1a-2cedb942c051")
+		(uuid "537924bf-03b5-49d4-99be-52b41d553d9a")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1139,7 +2006,381 @@
 		)
 		(polygon
 			(pts
-				(xy 96.5 18.25) (xy 98.25 18.25) (xy 98.25 17.5) (xy 96.5 17.5)
+				(xy 101.095 100.14) (xy 101.095 104.14) (xy 102.095 104.14) (xy 102.095 100.14)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "5fa08e69-2a18-42c1-b182-14bb76725bdf")
+		(hatch edge 0.5)
+		(priority 4)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 19.595 104.14) (xy 19.595 100.14) (xy 194.595 100.14) (xy 194.595 104.14)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(island)
+			(pts
+				(xy 21.288039 100.159685) (xy 21.333794 100.212489) (xy 21.345 100.264) (xy 21.345 100.89) (xy 23.095 100.89)
+				(xy 23.095 100.264) (xy 23.114685 100.196961) (xy 23.167489 100.151206) (xy 23.219 100.14) (xy 97.471 100.14)
+				(xy 97.538039 100.159685) (xy 97.583794 100.212489) (xy 97.595 100.264) (xy 97.595 103.991) (xy 97.575315 104.058039)
+				(xy 97.522511 104.103794) (xy 97.471 104.115) (xy 44.38859 104.115) (xy 44.347996 104.137166) (xy 44.321638 104.14)
+				(xy 32.254362 104.14) (xy 32.187323 104.120315) (xy 32.180727 104.115) (xy 32.178 104.115) (xy 19.719 104.115)
+				(xy 19.651961 104.095315) (xy 19.606206 104.042511) (xy 19.595 103.991) (xy 19.595 103.801917) (xy 19.614685 103.734878)
+				(xy 19.667489 103.689123) (xy 19.736647 103.679179) (xy 19.800203 103.708204) (xy 19.806681 103.714236)
+				(xy 19.842843 103.750398) (xy 21.316223 103.750398) (xy 21.316223 103.749233) (xy 91.592843 103.749233)
+				(xy 94.420463 103.749233) (xy 94.420463 101.632423) (xy 91.592843 101.632423) (xy 91.592843 103.749233)
+				(xy 21.316223 103.749233) (xy 21.316223 101.632423) (xy 19.842843 101.632423) (xy 19.806681 101.668585)
+				(xy 19.745358 101.70207) (xy 19.675666 101.697086) (xy 19.619733 101.655214) (xy 19.595316 101.58975)
+				(xy 19.595 101.580904) (xy 19.595 100.264) (xy 19.614685 100.196961) (xy 19.667489 100.151206) (xy 19.719 100.14)
+				(xy 21.221 100.14)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(island)
+			(pts
+				(xy 101.038039 100.159685) (xy 101.083794 100.212489) (xy 101.095 100.264) (xy 101.095 103.991)
+				(xy 101.075315 104.058039) (xy 101.022511 104.103794) (xy 100.971 104.115) (xy 98.719 104.115) (xy 98.651961 104.095315)
+				(xy 98.606206 104.042511) (xy 98.595 103.991) (xy 98.595 101.014) (xy 98.614685 100.946961) (xy 98.667489 100.901206)
+				(xy 98.719 100.89) (xy 100.345 100.89) (xy 100.345 100.264) (xy 100.364685 100.196961) (xy 100.417489 100.151206)
+				(xy 100.469 100.14) (xy 100.971 100.14)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(island)
+			(pts
+				(xy 122.538039 100.159685) (xy 122.583794 100.212489) (xy 122.595 100.264) (xy 122.595 100.89) (xy 124.345 100.89)
+				(xy 124.345 100.264) (xy 124.364685 100.196961) (xy 124.417489 100.151206) (xy 124.469 100.14) (xy 189.471 100.14)
+				(xy 189.538039 100.159685) (xy 189.583794 100.212489) (xy 189.595 100.264) (xy 189.595 100.89) (xy 191.345 100.89)
+				(xy 191.345 100.264) (xy 191.364685 100.196961) (xy 191.417489 100.151206) (xy 191.469 100.14) (xy 194.46 100.14)
+				(xy 194.527039 100.159685) (xy 194.572794 100.212489) (xy 194.584 100.264) (xy 194.584 103.991)
+				(xy 194.564315 104.058039) (xy 194.511511 104.103794) (xy 194.46 104.115) (xy 102.219 104.115) (xy 102.151961 104.095315)
+				(xy 102.106206 104.042511) (xy 102.095 103.991) (xy 102.095 103.749233) (xy 119.592843 103.749233)
+				(xy 122.491892 103.749233) (xy 186.592843 103.749233) (xy 189.49363 103.749233) (xy 189.49363 101.632423)
+				(xy 186.592843 101.632423) (xy 186.592843 103.749233) (xy 122.491892 103.749233) (xy 122.491892 101.631222)
+				(xy 119.592843 101.631222) (xy 119.592843 103.749233) (xy 102.095 103.749233) (xy 102.095 100.264)
+				(xy 102.114685 100.196961) (xy 102.167489 100.151206) (xy 102.219 100.14) (xy 122.471 100.14)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "5ff9d037-4a63-468d-b82f-9da82a00d154")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 191.345 48.705) (xy 189.595 48.705) (xy 189.595 49.455) (xy 191.345 49.455)
+			)
+		)
+	)
+	(zone
+		(net 1)
+		(net_name "ANT")
+		(layer "F.Cu")
+		(uuid "663563df-32bb-40c8-a3cf-d786d8526a13")
+		(hatch edge 0.5)
+		(priority 1)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 180.275 40.005) (xy 180.275 36.005) (xy 102.275 36.005) (xy 102.275 40.005)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 179.818039 36.024685) (xy 179.863794 36.077489) (xy 179.875 36.129) (xy 179.875 39.881) (xy 179.855315 39.948039)
+				(xy 179.802511 39.993794) (xy 179.751 40.005) (xy 102.399 40.005) (xy 102.331961 39.985315) (xy 102.286206 39.932511)
+				(xy 102.275 39.881) (xy 102.275 36.129) (xy 102.294685 36.061961) (xy 102.347489 36.016206) (xy 102.399 36.005)
+				(xy 179.751 36.005)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "6a6405c1-b99d-4b89-ad6f-c30f1ab46ea4")
+		(hatch edge 0.5)
+		(priority 5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 101.621 37.605) (xy 101.621 39.505) (xy 98.029 39.505) (xy 98.029 37.605)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(island)
+			(pts
+				(xy 101.564039 37.624685) (xy 101.609794 37.677489) (xy 101.621 37.729) (xy 101.621 39.381) (xy 101.601315 39.448039)
+				(xy 101.548511 39.493794) (xy 101.497 39.505) (xy 98.153 39.505) (xy 98.085961 39.485315) (xy 98.040206 39.432511)
+				(xy 98.029 39.381) (xy 98.029 37.729) (xy 98.048685 37.661961) (xy 98.101489 37.616206) (xy 98.153 37.605)
+				(xy 101.497 37.605)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "898e97a1-81bf-4014-8deb-e3ced3f035be")
+		(hatch edge 0.5)
+		(priority 3)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 182.685 84.645) (xy 182.685 80.645) (xy 19.685 80.645) (xy 19.685 84.645)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(island)
+			(pts
+				(xy 99.128039 80.664685) (xy 99.173794 80.717489) (xy 99.185 80.769) (xy 99.185 82.145) (xy 103.185 82.145)
+				(xy 103.185 80.769) (xy 103.204685 80.701961) (xy 103.257489 80.656206) (xy 103.309 80.645) (xy 182.561 80.645)
+				(xy 182.628039 80.664685) (xy 182.673794 80.717489) (xy 182.685 80.769) (xy 182.685 84.521) (xy 182.665315 84.588039)
+				(xy 182.612511 84.633794) (xy 182.561 84.645) (xy 19.809 84.645) (xy 19.741961 84.625315) (xy 19.696206 84.572511)
+				(xy 19.685 84.521) (xy 19.685 83.755398) (xy 20.682843 83.755398) (xy 24.867606 83.755398) (xy 24.867606 81.637423)
+				(xy 20.682843 81.637423) (xy 20.682843 83.755398) (xy 19.685 83.755398) (xy 19.685 80.769) (xy 19.704685 80.701961)
+				(xy 19.757489 80.656206) (xy 19.809 80.645) (xy 99.061 80.645)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "a47a7f18-9979-41d9-a3f3-4cb7010ff4fb")
+		(hatch edge 0.5)
+		(priority 4)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 19.595 52.705) (xy 19.595 48.705) (xy 194.595 48.705) (xy 194.595 52.705)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(island)
+			(pts
+				(xy 21.288039 48.724685) (xy 21.333794 48.777489) (xy 21.345 48.829) (xy 21.345 49.455) (xy 23.095 49.455)
+				(xy 23.095 48.829) (xy 23.114685 48.761961) (xy 23.167489 48.716206) (xy 23.219 48.705) (xy 97.471 48.705)
+				(xy 97.538039 48.724685) (xy 97.583794 48.777489) (xy 97.595 48.829) (xy 97.595 52.556) (xy 97.575315 52.623039)
+				(xy 97.522511 52.668794) (xy 97.471 52.68) (xy 44.38859 52.68) (xy 44.347996 52.702166) (xy 44.321638 52.705)
+				(xy 32.254362 52.705) (xy 32.187323 52.685315) (xy 32.180727 52.68) (xy 32.178 52.68) (xy 19.719 52.68)
+				(xy 19.651961 52.660315) (xy 19.606206 52.607511) (xy 19.595 52.556) (xy 19.595 52.366917) (xy 19.614685 52.299878)
+				(xy 19.667489 52.254123) (xy 19.736647 52.244179) (xy 19.800203 52.273204) (xy 19.806681 52.279236)
+				(xy 19.842843 52.315398) (xy 21.316223 52.315398) (xy 21.316223 52.314233) (xy 91.592843 52.314233)
+				(xy 94.420463 52.314233) (xy 94.420463 50.197423) (xy 91.592843 50.197423) (xy 91.592843 52.314233)
+				(xy 21.316223 52.314233) (xy 21.316223 50.197423) (xy 19.842843 50.197423) (xy 19.806681 50.233585)
+				(xy 19.745358 50.26707) (xy 19.675666 50.262086) (xy 19.619733 50.220214) (xy 19.595316 50.15475)
+				(xy 19.595 50.145904) (xy 19.595 48.829) (xy 19.614685 48.761961) (xy 19.667489 48.716206) (xy 19.719 48.705)
+				(xy 21.221 48.705)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(island)
+			(pts
+				(xy 101.038039 48.724685) (xy 101.083794 48.777489) (xy 101.095 48.829) (xy 101.095 52.556) (xy 101.075315 52.623039)
+				(xy 101.022511 52.668794) (xy 100.971 52.68) (xy 98.719 52.68) (xy 98.651961 52.660315) (xy 98.606206 52.607511)
+				(xy 98.595 52.556) (xy 98.595 49.579) (xy 98.614685 49.511961) (xy 98.667489 49.466206) (xy 98.719 49.455)
+				(xy 100.345 49.455) (xy 100.345 48.829) (xy 100.364685 48.761961) (xy 100.417489 48.716206) (xy 100.469 48.705)
+				(xy 100.971 48.705)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(island)
+			(pts
+				(xy 122.538039 48.724685) (xy 122.583794 48.777489) (xy 122.595 48.829) (xy 122.595 49.455) (xy 124.345 49.455)
+				(xy 124.345 48.829) (xy 124.364685 48.761961) (xy 124.417489 48.716206) (xy 124.469 48.705) (xy 189.471 48.705)
+				(xy 189.538039 48.724685) (xy 189.583794 48.777489) (xy 189.595 48.829) (xy 189.595 49.455) (xy 191.345 49.455)
+				(xy 191.345 48.829) (xy 191.364685 48.761961) (xy 191.417489 48.716206) (xy 191.469 48.705) (xy 194.46 48.705)
+				(xy 194.527039 48.724685) (xy 194.572794 48.777489) (xy 194.584 48.829) (xy 194.584 52.556) (xy 194.564315 52.623039)
+				(xy 194.511511 52.668794) (xy 194.46 52.68) (xy 102.219 52.68) (xy 102.151961 52.660315) (xy 102.106206 52.607511)
+				(xy 102.095 52.556) (xy 102.095 52.314233) (xy 119.592843 52.314233) (xy 122.491892 52.314233) (xy 186.592843 52.314233)
+				(xy 189.49363 52.314233) (xy 189.49363 50.197423) (xy 186.592843 50.197423) (xy 186.592843 52.314233)
+				(xy 122.491892 52.314233) (xy 122.491892 50.196222) (xy 119.592843 50.196222) (xy 119.592843 52.314233)
+				(xy 102.095 52.314233) (xy 102.095 48.829) (xy 102.114685 48.761961) (xy 102.167489 48.716206) (xy 102.219 48.705)
+				(xy 122.471 48.705)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "a6e88a16-0a1c-457b-91cb-77dcad54c7c4")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 97.595 48.705) (xy 97.595 52.705) (xy 98.595 52.705) (xy 98.595 48.705)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "bc3acfac-0ba5-4ef1-9d7e-857e468547d3")
+		(hatch edge 0.5)
+		(priority 2)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 172.57 66.85) (xy 172.57 70.85) (xy 19.57 70.85) (xy 19.57 66.85)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(island)
+			(pts
+				(xy 94.013039 66.869685) (xy 94.058794 66.922489) (xy 94.07 66.974) (xy 94.07 68.35) (xy 98.07 68.35)
+				(xy 98.07 66.974) (xy 98.089685 66.906961) (xy 98.142489 66.861206) (xy 98.194 66.85) (xy 172.446 66.85)
+				(xy 172.513039 66.869685) (xy 172.558794 66.922489) (xy 172.57 66.974) (xy 172.57 70.726) (xy 172.550315 70.793039)
+				(xy 172.497511 70.838794) (xy 172.446 70.85) (xy 19.694 70.85) (xy 19.626961 70.830315) (xy 19.581206 70.777511)
+				(xy 19.57 70.726) (xy 19.57 69.960398) (xy 20.567843 69.960398) (xy 24.255509 69.960398) (xy 24.255509 67.842423)
+				(xy 20.567843 67.842423) (xy 20.567843 69.960398) (xy 19.57 69.960398) (xy 19.57 66.974) (xy 19.589685 66.906961)
+				(xy 19.642489 66.861206) (xy 19.694 66.85) (xy 93.946 66.85)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "c06925bd-86ca-4ba5-8c87-3c11b7bcfe14")
+		(hatch edge 0.5)
+		(priority 2)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 172.555 22.225) (xy 172.555 26.225) (xy 19.555 26.225) (xy 19.555 22.225)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(island)
+			(pts
+				(xy 93.998039 22.244685) (xy 94.043794 22.297489) (xy 94.055 22.349) (xy 94.055 23.725) (xy 98.055 23.725)
+				(xy 98.055 22.349) (xy 98.074685 22.281961) (xy 98.127489 22.236206) (xy 98.179 22.225) (xy 172.431 22.225)
+				(xy 172.498039 22.244685) (xy 172.543794 22.297489) (xy 172.555 22.349) (xy 172.555 26.101) (xy 172.535315 26.168039)
+				(xy 172.482511 26.213794) (xy 172.431 26.225) (xy 19.679 26.225) (xy 19.611961 26.205315) (xy 19.566206 26.152511)
+				(xy 19.555 26.101) (xy 19.555 25.335398) (xy 20.552843 25.335398) (xy 24.240509 25.335398) (xy 24.240509 23.217423)
+				(xy 20.552843 23.217423) (xy 20.552843 25.335398) (xy 19.555 25.335398) (xy 19.555 22.349) (xy 19.574685 22.281961)
+				(xy 19.627489 22.236206) (xy 19.679 22.225) (xy 93.931 22.225)
 			)
 		)
 	)
@@ -1147,7 +2388,7 @@
 		(net 2)
 		(net_name "GND")
 		(layer "F.Cu")
-		(uuid "cda39b8b-207f-44e2-b1e1-2b414e9585d5")
+		(uuid "c88fac87-baac-4303-8cff-8e8e4602e4c7")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1160,16 +2401,16 @@
 		)
 		(polygon
 			(pts
-				(xy 65.5 187.5) (xy 61.5 187.5) (xy 61.5 110) (xy 65.5 110)
+				(xy 19.775 91.44) (xy 19.775 87.44) (xy 97.275 87.44) (xy 97.275 91.44)
 			)
 		)
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 65.443039 110.019685) (xy 65.488794 110.072489) (xy 65.5 110.124) (xy 65.5 187.376) (xy 65.480315 187.443039)
-				(xy 65.427511 187.488794) (xy 65.376 187.5) (xy 61.624 187.5) (xy 61.556961 187.480315) (xy 61.511206 187.427511)
-				(xy 61.5 187.376) (xy 61.5 110.124) (xy 61.519685 110.056961) (xy 61.572489 110.011206) (xy 61.624 110)
-				(xy 65.376 110)
+				(xy 97.218039 87.459685) (xy 97.263794 87.512489) (xy 97.275 87.564) (xy 97.275 91.316) (xy 97.255315 91.383039)
+				(xy 97.202511 91.428794) (xy 97.151 91.44) (xy 19.899 91.44) (xy 19.831961 91.420315) (xy 19.786206 91.367511)
+				(xy 19.775 91.316) (xy 19.775 87.564) (xy 19.794685 87.496961) (xy 19.847489 87.451206) (xy 19.899 87.44)
+				(xy 97.151 87.44)
 			)
 		)
 	)
@@ -1177,7 +2418,44 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Cu")
-		(uuid "d6a3e83c-c9dd-4614-b3eb-197be17ce961")
+		(uuid "cf2b6dc4-9f39-409a-8fb9-2fdc2a8d58bc")
+		(hatch edge 0.5)
+		(priority 2)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 1)
+			(island_area_min 10)
+		)
+		(polygon
+			(pts
+				(xy 172.555 73.66) (xy 172.555 77.66) (xy 19.555 77.66) (xy 19.555 73.66)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(island)
+			(pts
+				(xy 93.998039 73.679685) (xy 94.043794 73.732489) (xy 94.055 73.784) (xy 94.055 75.16) (xy 98.055 75.16)
+				(xy 98.055 73.784) (xy 98.074685 73.716961) (xy 98.127489 73.671206) (xy 98.179 73.66) (xy 172.431 73.66)
+				(xy 172.498039 73.679685) (xy 172.543794 73.732489) (xy 172.555 73.784) (xy 172.555 77.536) (xy 172.535315 77.603039)
+				(xy 172.482511 77.648794) (xy 172.431 77.66) (xy 19.679 77.66) (xy 19.611961 77.640315) (xy 19.566206 77.587511)
+				(xy 19.555 77.536) (xy 19.555 76.770398) (xy 20.552843 76.770398) (xy 24.240509 76.770398) (xy 24.240509 74.652423)
+				(xy 20.552843 74.652423) (xy 20.552843 76.770398) (xy 19.555 76.770398) (xy 19.555 73.784) (xy 19.574685 73.716961)
+				(xy 19.627489 73.671206) (xy 19.679 73.66) (xy 93.931 73.66)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "dafc04eb-821d-41d6-bf4f-b42219b06169")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1197,7 +2475,7 @@
 		)
 		(polygon
 			(pts
-				(xy 19.25 18.25) (xy 21 18.25) (xy 21 17.5) (xy 19.25 17.5)
+				(xy 191.345 100.14) (xy 189.595 100.14) (xy 189.595 100.89) (xy 191.345 100.89)
 			)
 		)
 	)
@@ -1205,7 +2483,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Cu")
-		(uuid "dc7d4b2b-2a7e-4496-beb8-e1f961a2498b")
+		(uuid "e0aed833-b56f-408f-879f-e15004d38f4d")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1225,7 +2503,7 @@
 		)
 		(polygon
 			(pts
-				(xy 95.5 17.5) (xy 95.5 21.5) (xy 96.5 21.5) (xy 96.5 17.5)
+				(xy 124.345 48.705) (xy 122.595 48.705) (xy 122.595 49.455) (xy 124.345 49.455)
 			)
 		)
 	)
@@ -1233,7 +2511,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Cu")
-		(uuid "fd0f92dd-fedd-4e48-9d2a-b9fff4dbd987")
+		(uuid "ec6cbcd9-c67f-4880-a00e-011baaebdb9b")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1253,7 +2531,35 @@
 		)
 		(polygon
 			(pts
-				(xy 122.25 17.5) (xy 120.5 17.5) (xy 120.5 18.25) (xy 122.25 18.25)
+				(xy 98.595 49.455) (xy 100.345 49.455) (xy 100.345 48.705) (xy 98.595 48.705)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "f7641e6e-30a3-4eca-8310-c3b91804e73e")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 101.095 48.705) (xy 101.095 52.705) (xy 102.095 52.705) (xy 102.095 48.705)
 			)
 		)
 	)
@@ -1261,7 +2567,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Mask")
-		(uuid "0ad36bd6-4045-453d-8366-ade02f74fefb")
+		(uuid "1b61ff79-61d1-40d7-bb87-af369e5a8e14")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1274,17 +2580,17 @@
 		)
 		(polygon
 			(pts
-				(xy 55.5 109.5) (xy 53 109.5) (xy 53 105.5) (xy 55.5 105.5)
+				(xy 189.595 48.705) (xy 192.095 48.705) (xy 192.095 52.705) (xy 189.595 52.705)
 			)
 		)
 		(filled_polygon
 			(layer "F.Mask")
 			(island)
 			(pts
-				(xy 55.443039 105.519685) (xy 55.488794 105.572489) (xy 55.5 105.624) (xy 55.5 109.376) (xy 55.480315 109.443039)
-				(xy 55.427511 109.488794) (xy 55.376 109.5) (xy 53.124 109.5) (xy 53.056961 109.480315) (xy 53.011206 109.427511)
-				(xy 53 109.376) (xy 53 105.624) (xy 53.019685 105.556961) (xy 53.072489 105.511206) (xy 53.124 105.5)
-				(xy 55.376 105.5)
+				(xy 192.038039 48.724685) (xy 192.083794 48.777489) (xy 192.095 48.829) (xy 192.095 52.556) (xy 192.075315 52.623039)
+				(xy 192.022511 52.668794) (xy 191.971 52.68) (xy 189.719 52.68) (xy 189.651961 52.660315) (xy 189.606206 52.607511)
+				(xy 189.595 52.556) (xy 189.595 48.829) (xy 189.614685 48.761961) (xy 189.667489 48.716206) (xy 189.719 48.705)
+				(xy 191.971 48.705)
 			)
 		)
 	)
@@ -1292,7 +2598,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Mask")
-		(uuid "0e119976-0c80-4c15-b63b-7b7c1791cc16")
+		(uuid "2c100d04-2fb8-4599-9dd8-5880c229dcc7")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1305,17 +2611,17 @@
 		)
 		(polygon
 			(pts
-				(xy 63.1 105.4) (xy 65 105.4) (xy 65 109.5) (xy 63.1 109.5)
+				(xy 23.845 104.14) (xy 21.345 104.14) (xy 21.345 100.14) (xy 23.845 100.14)
 			)
 		)
 		(filled_polygon
 			(layer "F.Mask")
 			(island)
 			(pts
-				(xy 64.943039 105.419685) (xy 64.988794 105.472489) (xy 65 105.524) (xy 65 109.376) (xy 64.980315 109.443039)
-				(xy 64.927511 109.488794) (xy 64.876 109.5) (xy 63.224 109.5) (xy 63.156961 109.480315) (xy 63.111206 109.427511)
-				(xy 63.1 109.376) (xy 63.1 105.524) (xy 63.119685 105.456961) (xy 63.172489 105.411206) (xy 63.224 105.4)
-				(xy 64.876 105.4)
+				(xy 23.788039 100.159685) (xy 23.833794 100.212489) (xy 23.845 100.264) (xy 23.845 103.991) (xy 23.825315 104.058039)
+				(xy 23.772511 104.103794) (xy 23.721 104.115) (xy 21.469 104.115) (xy 21.401961 104.095315) (xy 21.356206 104.042511)
+				(xy 21.345 103.991) (xy 21.345 100.264) (xy 21.364685 100.196961) (xy 21.417489 100.151206) (xy 21.469 100.14)
+				(xy 23.721 100.14)
 			)
 		)
 	)
@@ -1323,7 +2629,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Mask")
-		(uuid "3a5c1f88-2c37-461e-aff3-476e28af09ef")
+		(uuid "31907f88-e143-427e-afae-d8e03e59e76c")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1336,17 +2642,17 @@
 		)
 		(polygon
 			(pts
-				(xy 81.75 109.5) (xy 79.25 109.5) (xy 79.25 105.5) (xy 81.75 105.5)
+				(xy 92.275 87.44) (xy 97.275 87.44) (xy 97.275 91.44) (xy 92.275 91.44)
 			)
 		)
 		(filled_polygon
 			(layer "F.Mask")
 			(island)
 			(pts
-				(xy 81.693039 105.519685) (xy 81.738794 105.572489) (xy 81.75 105.624) (xy 81.75 109.376) (xy 81.730315 109.443039)
-				(xy 81.677511 109.488794) (xy 81.626 109.5) (xy 79.374 109.5) (xy 79.306961 109.480315) (xy 79.261206 109.427511)
-				(xy 79.25 109.376) (xy 79.25 105.624) (xy 79.269685 105.556961) (xy 79.322489 105.511206) (xy 79.374 105.5)
-				(xy 81.626 105.5)
+				(xy 97.218039 87.459685) (xy 97.263794 87.512489) (xy 97.275 87.564) (xy 97.275 91.316) (xy 97.255315 91.383039)
+				(xy 97.202511 91.428794) (xy 97.151 91.44) (xy 92.399 91.44) (xy 92.331961 91.420315) (xy 92.286206 91.367511)
+				(xy 92.275 91.316) (xy 92.275 87.564) (xy 92.294685 87.496961) (xy 92.347489 87.451206) (xy 92.399 87.44)
+				(xy 97.151 87.44)
 			)
 		)
 	)
@@ -1354,7 +2660,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Mask")
-		(uuid "b31c97e5-6e56-4e0a-957e-8406273acb1c")
+		(uuid "31ad66c2-d9e9-46cf-9b67-fb61b21a7333")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1367,17 +2673,17 @@
 		)
 		(polygon
 			(pts
-				(xy 61.5 105) (xy 61.5 100) (xy 65.5 100) (xy 65.5 105)
+				(xy 101.621 37.605) (xy 101.621 39.505) (xy 98.029 39.505) (xy 98.029 37.605)
 			)
 		)
 		(filled_polygon
 			(layer "F.Mask")
 			(island)
 			(pts
-				(xy 65.443039 100.019685) (xy 65.488794 100.072489) (xy 65.5 100.124) (xy 65.5 104.876) (xy 65.480315 104.943039)
-				(xy 65.427511 104.988794) (xy 65.376 105) (xy 61.624 105) (xy 61.556961 104.980315) (xy 61.511206 104.927511)
-				(xy 61.5 104.876) (xy 61.5 100.124) (xy 61.519685 100.056961) (xy 61.572489 100.011206) (xy 61.624 100)
-				(xy 65.376 100)
+				(xy 101.564039 37.624685) (xy 101.609794 37.677489) (xy 101.621 37.729) (xy 101.621 39.381) (xy 101.601315 39.448039)
+				(xy 101.548511 39.493794) (xy 101.497 39.505) (xy 98.153 39.505) (xy 98.085961 39.485315) (xy 98.040206 39.432511)
+				(xy 98.029 39.381) (xy 98.029 37.729) (xy 98.048685 37.661961) (xy 98.101489 37.616206) (xy 98.153 37.605)
+				(xy 101.497 37.605)
 			)
 		)
 	)
@@ -1385,7 +2691,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Mask")
-		(uuid "d085ff47-f43a-4e7c-86ff-58e4e0ea231a")
+		(uuid "3433e85d-15f2-4fd9-bd91-42577c3aeadd")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1398,17 +2704,17 @@
 		)
 		(polygon
 			(pts
-				(xy 187.5 17.5) (xy 190 17.5) (xy 190 21.5) (xy 187.5 21.5)
+				(xy 94.07 19.415) (xy 94.07 16.915) (xy 98.07 16.915) (xy 98.07 19.415)
 			)
 		)
 		(filled_polygon
 			(layer "F.Mask")
 			(island)
 			(pts
-				(xy 189.943039 17.519685) (xy 189.988794 17.572489) (xy 190 17.624) (xy 190 21.376) (xy 189.980315 21.443039)
-				(xy 189.927511 21.488794) (xy 189.876 21.5) (xy 187.624 21.5) (xy 187.556961 21.480315) (xy 187.511206 21.427511)
-				(xy 187.5 21.376) (xy 187.5 17.624) (xy 187.519685 17.556961) (xy 187.572489 17.511206) (xy 187.624 17.5)
-				(xy 189.876 17.5)
+				(xy 98.013039 16.934685) (xy 98.058794 16.987489) (xy 98.07 17.039) (xy 98.07 19.291) (xy 98.050315 19.358039)
+				(xy 97.997511 19.403794) (xy 97.946 19.415) (xy 94.194 19.415) (xy 94.126961 19.395315) (xy 94.081206 19.342511)
+				(xy 94.07 19.291) (xy 94.07 17.039) (xy 94.089685 16.971961) (xy 94.142489 16.926206) (xy 94.194 16.915)
+				(xy 97.946 16.915)
 			)
 		)
 	)
@@ -1416,7 +2722,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Mask")
-		(uuid "d130aa8b-4464-4054-810a-7213fa1de191")
+		(uuid "692c48f4-ebb1-46b1-884d-70d2398712c4")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1429,17 +2735,17 @@
 		)
 		(polygon
 			(pts
-				(xy 21.75 21.5) (xy 19.25 21.5) (xy 19.25 17.5) (xy 21.75 17.5)
+				(xy 99.185 33.21) (xy 99.185 30.71) (xy 103.185 30.71) (xy 103.185 33.21)
 			)
 		)
 		(filled_polygon
 			(layer "F.Mask")
 			(island)
 			(pts
-				(xy 21.693039 17.519685) (xy 21.738794 17.572489) (xy 21.75 17.624) (xy 21.75 21.376) (xy 21.730315 21.443039)
-				(xy 21.677511 21.488794) (xy 21.626 21.5) (xy 19.374 21.5) (xy 19.306961 21.480315) (xy 19.261206 21.427511)
-				(xy 19.25 21.376) (xy 19.25 17.624) (xy 19.269685 17.556961) (xy 19.322489 17.511206) (xy 19.374 17.5)
-				(xy 21.626 17.5)
+				(xy 103.128039 30.729685) (xy 103.173794 30.782489) (xy 103.185 30.834) (xy 103.185 33.086) (xy 103.165315 33.153039)
+				(xy 103.112511 33.198794) (xy 103.061 33.21) (xy 99.309 33.21) (xy 99.241961 33.190315) (xy 99.196206 33.137511)
+				(xy 99.185 33.086) (xy 99.185 30.834) (xy 99.204685 30.766961) (xy 99.257489 30.721206) (xy 99.309 30.71)
+				(xy 103.061 30.71)
 			)
 		)
 	)
@@ -1447,7 +2753,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Mask")
-		(uuid "ef7cdf55-7ad8-47ae-b6e1-5abac9263a8b")
+		(uuid "6a6e1d0b-fd13-4d6d-819b-7b4ec2a2fc06")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1460,17 +2766,17 @@
 		)
 		(polygon
 			(pts
-				(xy 61.5 115) (xy 61.5 110) (xy 65.5 110) (xy 65.5 115)
+				(xy 189.595 100.14) (xy 192.095 100.14) (xy 192.095 104.14) (xy 189.595 104.14)
 			)
 		)
 		(filled_polygon
 			(layer "F.Mask")
 			(island)
 			(pts
-				(xy 65.443039 110.019685) (xy 65.488794 110.072489) (xy 65.5 110.124) (xy 65.5 114.876) (xy 65.480315 114.943039)
-				(xy 65.427511 114.988794) (xy 65.376 115) (xy 61.624 115) (xy 61.556961 114.980315) (xy 61.511206 114.927511)
-				(xy 61.5 114.876) (xy 61.5 110.124) (xy 61.519685 110.056961) (xy 61.572489 110.011206) (xy 61.624 110)
-				(xy 65.376 110)
+				(xy 192.038039 100.159685) (xy 192.083794 100.212489) (xy 192.095 100.264) (xy 192.095 103.991)
+				(xy 192.075315 104.058039) (xy 192.022511 104.103794) (xy 191.971 104.115) (xy 189.719 104.115)
+				(xy 189.651961 104.095315) (xy 189.606206 104.042511) (xy 189.595 103.991) (xy 189.595 100.264)
+				(xy 189.614685 100.196961) (xy 189.667489 100.151206) (xy 189.719 100.14) (xy 191.971 100.14)
 			)
 		)
 	)
@@ -1478,7 +2784,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Mask")
-		(uuid "f9288a3a-195f-4a77-b748-a8025e7a2b07")
+		(uuid "700ab6d8-8b45-4cbf-b26c-dfea063920f7")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1491,17 +2797,17 @@
 		)
 		(polygon
 			(pts
-				(xy 123 21.5) (xy 120.5 21.5) (xy 120.5 17.5) (xy 123 17.5)
+				(xy 94.055 77.66) (xy 94.055 75.16) (xy 98.055 75.16) (xy 98.055 77.66)
 			)
 		)
 		(filled_polygon
 			(layer "F.Mask")
 			(island)
 			(pts
-				(xy 122.943039 17.519685) (xy 122.988794 17.572489) (xy 123 17.624) (xy 123 21.376) (xy 122.980315 21.443039)
-				(xy 122.927511 21.488794) (xy 122.876 21.5) (xy 120.624 21.5) (xy 120.556961 21.480315) (xy 120.511206 21.427511)
-				(xy 120.5 21.376) (xy 120.5 17.624) (xy 120.519685 17.556961) (xy 120.572489 17.511206) (xy 120.624 17.5)
-				(xy 122.876 17.5)
+				(xy 97.998039 75.179685) (xy 98.043794 75.232489) (xy 98.055 75.284) (xy 98.055 77.536) (xy 98.035315 77.603039)
+				(xy 97.982511 77.648794) (xy 97.931 77.66) (xy 94.179 77.66) (xy 94.111961 77.640315) (xy 94.066206 77.587511)
+				(xy 94.055 77.536) (xy 94.055 75.284) (xy 94.074685 75.216961) (xy 94.127489 75.171206) (xy 94.179 75.16)
+				(xy 97.931 75.16)
 			)
 		)
 	)
@@ -1509,7 +2815,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Mask")
-		(uuid "f9cf7499-bce7-45de-847f-246f5d61047e")
+		(uuid "76493f65-3116-4c50-b0fa-1ce481aa0fa6")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1522,17 +2828,17 @@
 		)
 		(polygon
 			(pts
-				(xy 99 21.5) (xy 96.5 21.5) (xy 96.5 17.5) (xy 99 17.5)
+				(xy 92.275 36.005) (xy 97.275 36.005) (xy 97.275 40.005) (xy 92.275 40.005)
 			)
 		)
 		(filled_polygon
 			(layer "F.Mask")
 			(island)
 			(pts
-				(xy 98.943039 17.519685) (xy 98.988794 17.572489) (xy 99 17.624) (xy 99 21.376) (xy 98.980315 21.443039)
-				(xy 98.927511 21.488794) (xy 98.876 21.5) (xy 96.624 21.5) (xy 96.556961 21.480315) (xy 96.511206 21.427511)
-				(xy 96.5 21.376) (xy 96.5 17.624) (xy 96.519685 17.556961) (xy 96.572489 17.511206) (xy 96.624 17.5)
-				(xy 98.876 17.5)
+				(xy 97.218039 36.024685) (xy 97.263794 36.077489) (xy 97.275 36.129) (xy 97.275 39.881) (xy 97.255315 39.948039)
+				(xy 97.202511 39.993794) (xy 97.151 40.005) (xy 92.399 40.005) (xy 92.331961 39.985315) (xy 92.286206 39.932511)
+				(xy 92.275 39.881) (xy 92.275 36.129) (xy 92.294685 36.061961) (xy 92.347489 36.016206) (xy 92.399 36.005)
+				(xy 97.151 36.005)
 			)
 		)
 	)
@@ -1540,7 +2846,7 @@
 		(net 0)
 		(net_name "")
 		(layer "F.Mask")
-		(uuid "fd6cece0-ea8b-41ec-a4e2-d7374acfd68f")
+		(uuid "8167e9b6-3f2d-4c28-98a6-9e7940125831")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -1553,17 +2859,327 @@
 		)
 		(polygon
 			(pts
-				(xy 88.75 109.5) (xy 86.25 109.5) (xy 86.25 105.5) (xy 88.75 105.5)
+				(xy 102.275 36.005) (xy 107.275 36.005) (xy 107.275 40.005) (xy 102.275 40.005)
 			)
 		)
 		(filled_polygon
 			(layer "F.Mask")
 			(island)
 			(pts
-				(xy 88.693039 105.519685) (xy 88.738794 105.572489) (xy 88.75 105.624) (xy 88.75 109.376) (xy 88.730315 109.443039)
-				(xy 88.677511 109.488794) (xy 88.626 109.5) (xy 86.374 109.5) (xy 86.306961 109.480315) (xy 86.261206 109.427511)
-				(xy 86.25 109.376) (xy 86.25 105.624) (xy 86.269685 105.556961) (xy 86.322489 105.511206) (xy 86.374 105.5)
-				(xy 88.626 105.5)
+				(xy 107.218039 36.024685) (xy 107.263794 36.077489) (xy 107.275 36.129) (xy 107.275 39.881) (xy 107.255315 39.948039)
+				(xy 107.202511 39.993794) (xy 107.151 40.005) (xy 102.399 40.005) (xy 102.331961 39.985315) (xy 102.286206 39.932511)
+				(xy 102.275 39.881) (xy 102.275 36.129) (xy 102.294685 36.061961) (xy 102.347489 36.016206) (xy 102.399 36.005)
+				(xy 107.151 36.005)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Mask")
+		(uuid "92342f72-c89a-4bbf-9d07-aeb5e9edb99b")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 101.095 104.14) (xy 98.595 104.14) (xy 98.595 100.14) (xy 101.095 100.14)
+			)
+		)
+		(filled_polygon
+			(layer "F.Mask")
+			(island)
+			(pts
+				(xy 101.038039 100.159685) (xy 101.083794 100.212489) (xy 101.095 100.264) (xy 101.095 103.991)
+				(xy 101.075315 104.058039) (xy 101.022511 104.103794) (xy 100.971 104.115) (xy 98.719 104.115) (xy 98.651961 104.095315)
+				(xy 98.606206 104.042511) (xy 98.595 103.991) (xy 98.595 100.264) (xy 98.614685 100.196961) (xy 98.667489 100.151206)
+				(xy 98.719 100.14) (xy 100.971 100.14)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Mask")
+		(uuid "9a0b32dd-06ee-4896-91c5-c7f08445e5ed")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 94.055 26.225) (xy 94.055 23.725) (xy 98.055 23.725) (xy 98.055 26.225)
+			)
+		)
+		(filled_polygon
+			(layer "F.Mask")
+			(island)
+			(pts
+				(xy 97.998039 23.744685) (xy 98.043794 23.797489) (xy 98.055 23.849) (xy 98.055 26.101) (xy 98.035315 26.168039)
+				(xy 97.982511 26.213794) (xy 97.931 26.225) (xy 94.179 26.225) (xy 94.111961 26.205315) (xy 94.066206 26.152511)
+				(xy 94.055 26.101) (xy 94.055 23.849) (xy 94.074685 23.781961) (xy 94.127489 23.736206) (xy 94.179 23.725)
+				(xy 97.931 23.725)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Mask")
+		(uuid "a09c5f66-cced-4871-9272-a48ba1b3c225")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 125.095 104.14) (xy 122.595 104.14) (xy 122.595 100.14) (xy 125.095 100.14)
+			)
+		)
+		(filled_polygon
+			(layer "F.Mask")
+			(island)
+			(pts
+				(xy 125.038039 100.159685) (xy 125.083794 100.212489) (xy 125.095 100.264) (xy 125.095 103.991)
+				(xy 125.075315 104.058039) (xy 125.022511 104.103794) (xy 124.971 104.115) (xy 122.719 104.115)
+				(xy 122.651961 104.095315) (xy 122.606206 104.042511) (xy 122.595 103.991) (xy 122.595 100.264)
+				(xy 122.614685 100.196961) (xy 122.667489 100.151206) (xy 122.719 100.14) (xy 124.971 100.14)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Mask")
+		(uuid "a2721d7e-95aa-4a8f-bc30-d98764d25f22")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 94.07 70.85) (xy 94.07 68.35) (xy 98.07 68.35) (xy 98.07 70.85)
+			)
+		)
+		(filled_polygon
+			(layer "F.Mask")
+			(island)
+			(pts
+				(xy 98.013039 68.369685) (xy 98.058794 68.422489) (xy 98.07 68.474) (xy 98.07 70.726) (xy 98.050315 70.793039)
+				(xy 97.997511 70.838794) (xy 97.946 70.85) (xy 94.194 70.85) (xy 94.126961 70.830315) (xy 94.081206 70.777511)
+				(xy 94.07 70.726) (xy 94.07 68.474) (xy 94.089685 68.406961) (xy 94.142489 68.361206) (xy 94.194 68.35)
+				(xy 97.946 68.35)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Mask")
+		(uuid "b2d5d687-a714-4817-a7f5-3ff739892815")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 23.845 52.705) (xy 21.345 52.705) (xy 21.345 48.705) (xy 23.845 48.705)
+			)
+		)
+		(filled_polygon
+			(layer "F.Mask")
+			(island)
+			(pts
+				(xy 23.788039 48.724685) (xy 23.833794 48.777489) (xy 23.845 48.829) (xy 23.845 52.556) (xy 23.825315 52.623039)
+				(xy 23.772511 52.668794) (xy 23.721 52.68) (xy 21.469 52.68) (xy 21.401961 52.660315) (xy 21.356206 52.607511)
+				(xy 21.345 52.556) (xy 21.345 48.829) (xy 21.364685 48.761961) (xy 21.417489 48.716206) (xy 21.469 48.705)
+				(xy 23.721 48.705)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Mask")
+		(uuid "be2bb03c-f423-4d81-825d-f86450b4e58e")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 102.275 87.44) (xy 107.275 87.44) (xy 107.275 91.44) (xy 102.275 91.44)
+			)
+		)
+		(filled_polygon
+			(layer "F.Mask")
+			(island)
+			(pts
+				(xy 107.218039 87.459685) (xy 107.263794 87.512489) (xy 107.275 87.564) (xy 107.275 91.316) (xy 107.255315 91.383039)
+				(xy 107.202511 91.428794) (xy 107.151 91.44) (xy 102.399 91.44) (xy 102.331961 91.420315) (xy 102.286206 91.367511)
+				(xy 102.275 91.316) (xy 102.275 87.564) (xy 102.294685 87.496961) (xy 102.347489 87.451206) (xy 102.399 87.44)
+				(xy 107.151 87.44)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Mask")
+		(uuid "c428a93c-b746-4639-97f7-507c0699becf")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 99.185 84.645) (xy 99.185 82.145) (xy 103.185 82.145) (xy 103.185 84.645)
+			)
+		)
+		(filled_polygon
+			(layer "F.Mask")
+			(island)
+			(pts
+				(xy 103.128039 82.164685) (xy 103.173794 82.217489) (xy 103.185 82.269) (xy 103.185 84.521) (xy 103.165315 84.588039)
+				(xy 103.112511 84.633794) (xy 103.061 84.645) (xy 99.309 84.645) (xy 99.241961 84.625315) (xy 99.196206 84.572511)
+				(xy 99.185 84.521) (xy 99.185 82.269) (xy 99.204685 82.201961) (xy 99.257489 82.156206) (xy 99.309 82.145)
+				(xy 103.061 82.145)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Mask")
+		(uuid "cee55b40-259a-4508-b56b-7e8a9facd885")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 101.095 52.705) (xy 98.595 52.705) (xy 98.595 48.705) (xy 101.095 48.705)
+			)
+		)
+		(filled_polygon
+			(layer "F.Mask")
+			(island)
+			(pts
+				(xy 101.038039 48.724685) (xy 101.083794 48.777489) (xy 101.095 48.829) (xy 101.095 52.556) (xy 101.075315 52.623039)
+				(xy 101.022511 52.668794) (xy 100.971 52.68) (xy 98.719 52.68) (xy 98.651961 52.660315) (xy 98.606206 52.607511)
+				(xy 98.595 52.556) (xy 98.595 48.829) (xy 98.614685 48.761961) (xy 98.667489 48.716206) (xy 98.719 48.705)
+				(xy 100.971 48.705)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Mask")
+		(uuid "f5a10cfa-d2fc-400d-9d53-020d34f7a833")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 101.621 89.04) (xy 101.621 90.94) (xy 98.029 90.94) (xy 98.029 89.04)
+			)
+		)
+		(filled_polygon
+			(layer "F.Mask")
+			(island)
+			(pts
+				(xy 101.564039 89.059685) (xy 101.609794 89.112489) (xy 101.621 89.164) (xy 101.621 90.816) (xy 101.601315 90.883039)
+				(xy 101.548511 90.928794) (xy 101.497 90.94) (xy 98.153 90.94) (xy 98.085961 90.920315) (xy 98.040206 90.867511)
+				(xy 98.029 90.816) (xy 98.029 89.164) (xy 98.048685 89.096961) (xy 98.101489 89.051206) (xy 98.153 89.04)
+				(xy 101.497 89.04)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Mask")
+		(uuid "fb6b3596-6638-413c-8e80-ee14250632e8")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 125.095 52.705) (xy 122.595 52.705) (xy 122.595 48.705) (xy 125.095 48.705)
+			)
+		)
+		(filled_polygon
+			(layer "F.Mask")
+			(island)
+			(pts
+				(xy 125.038039 48.724685) (xy 125.083794 48.777489) (xy 125.095 48.829) (xy 125.095 52.556) (xy 125.075315 52.623039)
+				(xy 125.022511 52.668794) (xy 124.971 52.68) (xy 122.719 52.68) (xy 122.651961 52.660315) (xy 122.606206 52.607511)
+				(xy 122.595 52.556) (xy 122.595 48.829) (xy 122.614685 48.761961) (xy 122.667489 48.716206) (xy 122.719 48.705)
+				(xy 124.971 48.705)
 			)
 		)
 	)
