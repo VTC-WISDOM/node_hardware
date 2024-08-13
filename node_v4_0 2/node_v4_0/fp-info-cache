@@ -1,4 +1,4 @@
-23602925424429364
+23606372567689325
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96103,6 +96103,13 @@ Varistor VF
 2
 2
 WiSDOM
+21-100291_W80D&plus_1_MXM
+
+MAX31342EWA+T 
+0
+8
+8
+WiSDOM
 1042240820_MOL
 
 1042240820 
@@ -96116,6 +96123,13 @@ AMPHENOL_12402012E212A
 0
 16
 16
+WiSDOM
+BAT_BAT-HLD-001-THM
+
+
+0
+5
+2
 WiSDOM
 CONN_CONMHF1-SMD_LNX
 
