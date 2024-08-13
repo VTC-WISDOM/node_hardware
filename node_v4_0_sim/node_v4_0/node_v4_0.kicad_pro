@@ -63,10 +63,7 @@
           "width": 0.8
         }
       ],
-      "drc_exclusions": [
-        "clearance|104802000|97675500|2bf22e4a-3b09-4641-bb56-7c6ca7f680ff|8b62b589-4c00-41e3-98c2-443e324a7f28",
-        "clearance|107596000|97675500|ac9550bd-749e-4c9b-ae51-a45d7b28dd13|6d67d914-bf36-414d-9c31-ba02e1d902f8"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },

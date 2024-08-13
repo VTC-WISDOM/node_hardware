@@ -6308,7 +6308,7 @@
 				)
 			)
 		)
-		(property "Footprint" "usbc:AMPHENOL_12402012E212A"
+		(property "Footprint" "WiSDOM:AMPHENOL_12402012E212A"
 			(at 91.186 130.556 0)
 			(effects
 				(font

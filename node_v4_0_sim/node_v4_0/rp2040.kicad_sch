@@ -2318,6 +2318,18 @@
 		(uuid "2f34dcac-8a5e-4261-8cb7-2dd3bcb09c77")
 	)
 	(junction
+		(at 240.03 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3139e5cc-683b-4973-bf33-3c0c4c6ca238")
+	)
+	(junction
+		(at 240.03 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "38008428-1f3e-4385-9cdc-ffcd6a517163")
+	)
+	(junction
 		(at 76.2 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2593,6 +2605,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 135.89) (xy 97.79 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0981fefa-fed5-4971-8589-55c097de9580")
+	)
+	(wire
+		(pts
 			(xy 67.31 76.2) (xy 69.85 76.2)
 		)
 		(stroke
@@ -2640,6 +2662,16 @@
 			(type default)
 		)
 		(uuid "0fc72bba-ca2c-45c4-a239-ffff099af73c")
+	)
+	(wire
+		(pts
+			(xy 240.03 114.3) (xy 242.57 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "115f4f9e-f232-4dd1-9707-63a1eb9a76e5")
 	)
 	(wire
 		(pts
@@ -3003,7 +3035,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 114.3) (xy 242.57 114.3)
+			(xy 238.76 114.3) (xy 240.03 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3170,6 +3202,16 @@
 			(type default)
 		)
 		(uuid "64aa525b-dff4-4de4-ac4c-b6ee6ecaddae")
+	)
+	(wire
+		(pts
+			(xy 240.03 111.76) (xy 242.57 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68a57bac-29a3-49d1-82dd-a3775390f254")
 	)
 	(wire
 		(pts
@@ -4143,7 +4185,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 111.76) (xy 242.57 111.76)
+			(xy 238.76 111.76) (xy 240.03 111.76)
 		)
 		(stroke
 			(width 0)
@@ -4743,6 +4785,28 @@
 		(uuid "59ad98fa-0351-407a-9958-6122b4130f8f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 104.5247 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "PWRKEY"
+		(shape input)
+		(at 97.79 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a3ebeb8-02be-42a4-a459-2ad51c88f6fd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 108.2742 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5383,7 +5447,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RP2040_minimal_r2:RP2040-QFN-56"
+		(property "Footprint" "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm"
 			(at 44.45 133.35 0)
 			(effects
 				(font
@@ -6852,7 +6916,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "custom:XTAL-445"
+		(property "Footprint" "WiSDOM:XTAL-445"
 			(at 171.45 74.93 0)
 			(effects
 				(font
@@ -7880,7 +7944,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pts526:SMT_FS"
+		(property "Footprint" "WiSDOM:PTS526"
 			(at 233.68 85.852 0)
 			(effects
 				(font
@@ -8065,15 +8129,15 @@
 	(symbol
 		(lib_id "2024-05-28_14-35-54:PTS526_SK15_SMTR2_LFS")
 		(at 233.68 111.76 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e15411d8-3ad5-4a90-b43f-a7a366a24a75")
 		(property "Reference" "U8"
-			(at 233.045 105.41 0)
+			(at 234.315 105.41 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8081,15 +8145,15 @@
 			)
 		)
 		(property "Value" "PTS526 SK15 SMTR2 LFS"
-			(at 233.045 107.95 0)
+			(at 234.315 107.95 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "pts526:SMT_FS"
-			(at 232.41 106.172 0)
+		(property "Footprint" "WiSDOM:PTS526"
+			(at 234.95 106.172 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8099,7 +8163,7 @@
 			)
 		)
 		(property "Datasheet" "PTS526 SK15 SMTR2 LFS"
-			(at 233.426 107.95 0)
+			(at 233.934 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)

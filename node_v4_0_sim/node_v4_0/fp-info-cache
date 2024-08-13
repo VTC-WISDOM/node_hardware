@@ -1,4 +1,4 @@
-23705500054019229
+23717564901779048
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64399,13 +64399,6 @@ Yellow 5381 Series LED
 0
 2
 2
-Library
-XCVR_SIM7080G
-
-
-0
-77
-77
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -96379,6 +96372,62 @@ Varistor
 Varistor_Panasonic_VF
 Panasonic VF series varistor, 6x8mm body, 3.2mm height, https://mediap.industry.panasonic.eu/assets/imported/industrial.panasonic.com/cdbs/www-data/pdf/AWA0000/AWA0000C4.pdf
 Varistor VF
+0
+2
+2
+WiSDOM
+AMPHENOL_12402012E212A
+
+
+0
+16
+16
+WiSDOM
+CONN_CONMHF1-SMD_LNX
+
+CONMHF1-SMD-T 
+0
+4
+2
+WiSDOM
+PTS526
+
+PTS526 SK15 SMTR2 LFS 
+0
+4
+4
+WiSDOM
+XCVR_SIM7080G
+
+
+0
+77
+77
+WiSDOM
+XTAL-445
+
+
+0
+2
+2
+WiSDOM
+XTAL_SC32S-7PF20PPM_EPS
+
+SC32S-7PF20PPM 
+0
+2
+2
+WiSDOM
+XTAL_SC32S-7PF20PPM_EPS-L
+
+SC32S-7PF20PPM 
+0
+2
+2
+WiSDOM
+XTAL_SC32S-7PF20PPM_EPS-M
+
+SC32S-7PF20PPM 
 0
 2
 2

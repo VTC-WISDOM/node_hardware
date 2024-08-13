@@ -1,0 +1,165 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "03dc898e-8f05-4377-b5c6-8a0f09836da8")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 1.27 226.06)
+		(size 252.73 256.54)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0531f7fa-ef0f-48d8-998a-4014f07ea2d0")
+		(property "Sheetname" "POWER"
+			(at 1.27 225.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 1.27 483.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "node_v4_0"
+				(path "/03dc898e-8f05-4377-b5c6-8a0f09836da8"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 1.27 495.3)
+		(size 252.73 256.54)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5fbf5ca9-9545-4205-a66a-787da56b16b9")
+		(property "Sheetname" "PERIPHERALS"
+			(at 1.27 494.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "peripherals.kicad_sch"
+			(at 1.27 752.4246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "node_v4_0"
+				(path "/03dc898e-8f05-4377-b5c6-8a0f09836da8"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 264.16 226.06)
+		(size 252.73 256.54)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "97d6a4f8-0a43-4caa-bfdf-f6d51a8f6307")
+		(property "Sheetname" "MCU"
+			(at 264.16 225.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rp2040.kicad_sch"
+			(at 264.16 483.1846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "node_v4_0"
+				(path "/03dc898e-8f05-4377-b5c6-8a0f09836da8"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 264.16 495.3)
+		(size 252.73 256.54)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "acf22234-ba16-4d6b-83f4-1166d3ac6600")
+		(property "Sheetname" "CONNECTIONS"
+			(at 264.16 494.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "connections.kicad_sch"
+			(at 264.16 752.4246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "node_v4_0"
+				(path "/03dc898e-8f05-4377-b5c6-8a0f09836da8"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
