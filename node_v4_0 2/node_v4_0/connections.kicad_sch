@@ -2239,50 +2239,6 @@
 			)
 		)
 	)
-	(global_label "GP7"
-		(shape input)
-		(at 120.65 100.33 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "23daaba4-5b6d-4ab8-bd37-3bf040f65aa5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.3847 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GP6"
-		(shape input)
-		(at 120.65 97.79 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "30251622-1473-4631-949d-499cd122be54")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.3847 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SCL"
 		(shape input)
 		(at 120.65 107.95 0)
@@ -2459,7 +2415,29 @@
 			)
 		)
 	)
-	(global_label "GP8"
+	(global_label "GP28"
+		(shape input)
+		(at 120.65 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9831a065-1539-4100-8138-ca480372d860")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.5942 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GP29"
 		(shape input)
 		(at 120.65 102.87 0)
 		(fields_autoplaced yes)
@@ -2469,9 +2447,9 @@
 			)
 			(justify left)
 		)
-		(uuid "8b38c735-e3a4-48d1-aa12-0b06ba393274")
+		(uuid "b141bc1f-309a-4cec-ab07-f9d3c66afdda")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.3847 102.87 0)
+			(at 128.5942 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2494,6 +2472,28 @@
 		(uuid "bb8ffdd9-5838-4bb6-9b3a-f1365a69060a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 127.2033 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GP27"
+		(shape input)
+		(at 120.65 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c711e4de-8669-4e6f-92ad-c72d2f545bd2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.5942 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
