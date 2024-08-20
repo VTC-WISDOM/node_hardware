@@ -1,5 +1,7 @@
 # hardware
 a collection of schematic and pcb designs for the WiSDOM node
+everything contained in this repository is licensed under the CERN Open Hardware License version 2 - Weakly Reciprocal License (CERN-OHL-W).
+this is comparable to the gpl2, see LICENSE for details
 
 ## V4
 v4.0.2: schematic split into sheets for organization
