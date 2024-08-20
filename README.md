@@ -5,8 +5,7 @@ a collection of schematic and pcb designs for the WiSDOM node
 v4.0.2: schematic split into sheets for organization
         added better switching circuit for usb/bat operation. replaced 3.3V supply with a linear regulator for stability and reverse voltage protection. 
         includes first prototype of footprints for cellular interface. cellular functionality is not guaranteed until further testing.
-        better layout of RP2040 traces. added jst connectors for battery and external power(labeled solar).
-        
+        better layout of RP2040 traces. added jst connectors for battery and external power(labeled solar).  
         only "v4\_0\_2" files will be tested. assume others should not be used.
 
 # V3
