@@ -2974,6 +2974,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 129.54) (xy 104.14 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b196ebb3-f9c1-4bd0-bd12-0f796c011934")
+	)
+	(wire
+		(pts
 			(xy 196.85 105.41) (xy 196.85 106.68)
 		)
 		(stroke
@@ -3074,6 +3084,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 132.08) (xy 104.14 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e21a4e99-1679-4dee-85d0-d461894c151f")
+	)
+	(wire
+		(pts
 			(xy 261.62 74.93) (xy 261.62 77.47)
 		)
 		(stroke
@@ -3167,6 +3187,28 @@
 		(uuid "0bfec9dc-255a-4c78-9147-51ea3f15040a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 96.1958 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "485+"
+		(shape input)
+		(at 102.87 129.54 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0d64540c-ef6c-496f-a355-2bd4c17ee0f2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 94.6839 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3414,6 +3456,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "485-"
+		(shape input)
+		(at 102.87 132.08 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a91f368e-8c5c-42ad-b119-84169cb1bf7b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 94.6839 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4259,6 +4323,74 @@
 			(project "node_v4_0"
 				(path "/03dc898e-8f05-4377-b5c6-8a0f09836da8/acf22234-ba16-4d6b-83f4-1166d3ac6600"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 109.22 132.08 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51b3e40d-95ce-47c1-ba8f-ecaa2a934026")
+		(property "Reference" "J7"
+			(at 108.585 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 108.585 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 109.22 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 109.22 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6053a88f-2318-4ad4-a1af-5f2fcba7acad")
+		)
+		(pin "1"
+			(uuid "e7e762d6-b23b-4f2b-8ee4-b186c6fd0c60")
+		)
+		(instances
+			(project "node_v5_0_0"
+				(path "/03dc898e-8f05-4377-b5c6-8a0f09836da8/acf22234-ba16-4d6b-83f4-1166d3ac6600"
+					(reference "J7")
 					(unit 1)
 				)
 			)
