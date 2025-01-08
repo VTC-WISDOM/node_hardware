@@ -63,7 +63,9 @@
           "width": 0.8
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|57389000|97466500|b32a12b3-d35f-484d-bcf4-2e56d8e1dfc1|b54ae644-4d73-4e49-9712-9ae508b8b325"
+      ],
       "meta": {
         "version": 2
       },
@@ -92,7 +94,7 @@
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
         "lib_footprint_mismatch": "warning",
-        "malformed_courtyard": "error",
+        "malformed_courtyard": "ignore",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
