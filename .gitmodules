@@ -1,3 +1,6 @@
 [submodule "JLCPCB-Kicad-Library"]
 	path = JLCPCB-Kicad-Library
 	url = https://github.com/CDFER/JLCPCB-Kicad-Library.git
+[submodule "kicad-libs"]
+	path = kicad-libs
+	url = git@github.com:VTC-WISDOM/kicad-libs.git
