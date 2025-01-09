@@ -1,4 +1,4 @@
-24580865639333742
+24587811230802853
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -99141,6 +99141,13 @@ QFN DFN_QFN
 70
 57
 WiSDOM
+SW_PTS636_CNK
+
+PTS636 SM50J SMTR LFS 
+0
+2
+2
+WiSDOM
 TMSOP08_2P9X2P8_ABL
 
 S-35770E01I-K8T2U 
@@ -99205,6 +99212,27 @@ handsome
 0
 WiSDOM
 prince
+
+
+0
+0
+0
+WiSDOM
+vtsu
+
+
+0
+0
+0
+WiSDOM
+wisdomcat
+
+
+0
+0
+0
+WiSDOM
+wisdomcatnomow
 
 
 0
