@@ -1,4 +1,0 @@
-[submodule "kicad-libs"]
-	path = kicad-libs
-	url = git@github.com:VTC-WISDOM/kicad-libs.git
-	branch = main
