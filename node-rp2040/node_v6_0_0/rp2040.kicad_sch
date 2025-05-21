@@ -5035,10 +5035,6 @@
 		(color 0 0 0 0)
 		(uuid "f9740111-3fc0-4269-ac2a-8aee7c683371")
 	)
-	(no_connect
-		(at 90.17 123.19)
-		(uuid "2bf5a466-9b56-48b3-99fb-c9754eafe17c")
-	)
 	(wire
 		(pts
 			(xy 27.94 35.56) (xy 27.94 34.29)
@@ -5261,7 +5257,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 123.19) (xy 90.17 123.19)
+			(xy 88.9 123.19) (xy 92.71 123.19)
 		)
 		(stroke
 			(width 0)
@@ -7169,6 +7165,28 @@
 			)
 		)
 	)
+	(global_label "GP12"
+		(shape input)
+		(at 92.71 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "41abab7f-8dab-48c5-a2c9-7492c33166ab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.6542 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "USB+"
 		(shape input)
 		(at 139.7 80.01 180)
@@ -7725,7 +7743,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:R_0805"
+		(property "Footprint" "JLCPCB:R_0805"
 			(at 259.842 99.06 90)
 			(effects
 				(font
@@ -8014,7 +8032,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 51.562 30.48 90)
 			(effects
 				(font
@@ -8210,7 +8228,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 189.992 119.38 90)
 			(effects
 				(font
@@ -8469,7 +8487,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:R_0603"
+		(property "Footprint" "JLCPCB:R_0603"
 			(at 30.48 101.092 90)
 			(effects
 				(font
@@ -8890,7 +8908,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 38.862 30.48 90)
 			(effects
 				(font
@@ -9083,7 +9101,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 200.66 66.548 90)
 			(effects
 				(font
@@ -9279,7 +9297,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 89.662 30.48 90)
 			(effects
 				(font
@@ -9538,7 +9556,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 200.66 79.248 90)
 			(effects
 				(font
@@ -9797,7 +9815,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:R_0805"
+		(property "Footprint" "JLCPCB:R_0805"
 			(at 187.96 79.248 90)
 			(effects
 				(font
@@ -10020,7 +10038,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0805"
+		(property "Footprint" "JLCPCB:C_0805"
 			(at 177.292 119.38 90)
 			(effects
 				(font
@@ -10414,7 +10432,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 102.362 30.48 90)
 			(effects
 				(font
@@ -10824,7 +10842,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:R_0603"
+		(property "Footprint" "JLCPCB:R_0603"
 			(at 30.48 98.552 90)
 			(effects
 				(font
@@ -11115,7 +11133,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WiSDOM:SW_PTS636_CNK"
+		(property "Footprint" "pts636:SW_PTS636_CNK"
 			(at 242.824 90.17 0)
 			(effects
 				(font
@@ -11253,7 +11271,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm_ThermalVias"
+		(property "Footprint" "JLCPCB:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm_ThermalVias"
 			(at 63.5 130.81 0)
 			(effects
 				(font
@@ -11497,7 +11515,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 188.722 33.02 90)
 			(effects
 				(font
@@ -11759,7 +11777,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 115.062 30.48 90)
 			(effects
 				(font
@@ -11955,7 +11973,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0805"
+		(property "Footprint" "JLCPCB:C_0805"
 			(at 229.362 33.02 90)
 			(effects
 				(font
@@ -12151,7 +12169,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:R_0805"
+		(property "Footprint" "JLCPCB:R_0805"
 			(at 242.062 119.38 90)
 			(effects
 				(font
@@ -12374,7 +12392,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0805"
+		(property "Footprint" "JLCPCB:C_0805"
 			(at 150.622 30.48 90)
 			(effects
 				(font
@@ -12766,7 +12784,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:SOIC-8_L5.3-W5.3-P1.27-LS8.0-BL"
+		(property "Footprint" "JLCPCB:SOIC-8_L5.3-W5.3-P1.27-LS8.0-BL"
 			(at 166.37 153.67 0)
 			(effects
 				(font
@@ -12955,7 +12973,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0805"
+		(property "Footprint" "JLCPCB:C_0805"
 			(at 137.922 30.48 90)
 			(effects
 				(font
@@ -13151,7 +13169,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 76.962 30.48 90)
 			(effects
 				(font
@@ -13413,7 +13431,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 176.022 33.02 90)
 			(effects
 				(font
@@ -13609,7 +13627,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 64.262 30.48 90)
 			(effects
 				(font
@@ -13803,7 +13821,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WiSDOM:SW_PTS636_CNK"
+		(property "Footprint" "pts636:SW_PTS636_CNK"
 			(at 241.554 67.31 0)
 			(effects
 				(font
@@ -13875,7 +13893,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 26.162 30.48 90)
 			(effects
 				(font
@@ -14335,7 +14353,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0805"
+		(property "Footprint" "JLCPCB:C_0805"
 			(at 216.662 33.02 90)
 			(effects
 				(font
@@ -14595,7 +14613,7 @@
 				)
 			)
 		)
-		(property "Footprint" "WiSDOM:SW_PTS636_CNK"
+		(property "Footprint" "pts636:SW_PTS636_CNK"
 			(at 242.824 125.73 0)
 			(effects
 				(font
@@ -14667,7 +14685,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCPCB-Kicad-Footprints:C_0402"
+		(property "Footprint" "JLCPCB:C_0402"
 			(at 201.422 33.02 90)
 			(effects
 				(font
