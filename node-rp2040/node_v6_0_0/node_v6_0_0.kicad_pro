@@ -69,10 +69,6 @@
           "COAX CONNS OK"
         ],
         [
-          "duplicate_footprints|146700000|134100000|4653a87a-e77c-40ab-b6f5-f6fa9d89a8c0|e8e4c9e1-1bfc-4096-a0a4-18420cf0e835",
-          ""
-        ],
-        [
           "extra_footprint|146700000|134100000|4653a87a-e77c-40ab-b6f5-f6fa9d89a8c0|00000000-0000-0000-0000-000000000000",
           ""
         ],
@@ -93,12 +89,36 @@
           "XTAL LINE OK"
         ],
         [
+          "items_not_allowed|159830000|109800000|83c23848-2e82-4d11-abd8-e66c3e21f439|00000000-0000-0000-0000-000000000000",
+          "XTAL LINES OK"
+        ],
+        [
+          "items_not_allowed|159850000|108150000|e6bb4315-4f81-47d9-b005-920632197b10|00000000-0000-0000-0000-000000000000",
+          "XTAL LINES OK"
+        ],
+        [
+          "items_not_allowed|160000000|109800000|a8958a27-f949-4841-9562-a459d87d5491|00000000-0000-0000-0000-000000000000",
+          "XTAL LINES OK"
+        ],
+        [
           "items_not_allowed|160330000|107665143|55f27979-bef6-493b-bdc6-3832ba97112b|00000000-0000-0000-0000-000000000000",
           "XTAL PAD OK"
         ],
         [
           "items_not_allowed|162000000|106600000|d97105ae-8f7d-44ba-a681-9ee313ec61dc|00000000-0000-0000-0000-000000000000",
           "XTAL LINE OK"
+        ],
+        [
+          "items_not_allowed|162730000|109800000|7f1857ac-64ab-4cfb-9a0e-9c6110a4fd8b|00000000-0000-0000-0000-000000000000",
+          "XTAL LINES OK"
+        ],
+        [
+          "items_not_allowed|162900000|109800000|7b801eab-1813-4131-ab5e-b41cc0030c53|00000000-0000-0000-0000-000000000000",
+          "XTAL LINES OK"
+        ],
+        [
+          "items_not_allowed|163150000|108250000|254a3815-5390-4296-95b7-ccd084e38559|00000000-0000-0000-0000-000000000000",
+          "XTAL LINES OK"
         ],
         [
           "items_not_allowed|163400000|108000000|f4343424-fe12-4a7a-8559-004b168cb06a|00000000-0000-0000-0000-000000000000",
@@ -158,7 +178,7 @@
         "starved_thermal": "ignore",
         "text_height": "ignore",
         "text_on_edge_cuts": "error",
-        "text_thickness": "warning",
+        "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_angle": "error",
