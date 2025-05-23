@@ -63,7 +63,52 @@
           "width": 4.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|162495000|139655000|5dc8ea1f-cc0d-4752-a4e4-a3cee4dc2ff1|bccb2c03-3bf2-4ecd-b81d-40a4e08ca1e8",
+          "COAX CONNS OK"
+        ],
+        [
+          "duplicate_footprints|146700000|134100000|4653a87a-e77c-40ab-b6f5-f6fa9d89a8c0|e8e4c9e1-1bfc-4096-a0a4-18420cf0e835",
+          ""
+        ],
+        [
+          "extra_footprint|146700000|134100000|4653a87a-e77c-40ab-b6f5-f6fa9d89a8c0|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "extra_footprint|146727500|120227500|e8e4c9e1-1bfc-4096-a0a4-18420cf0e835|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_symbol_mismatch|160600000|106000000|30bad1d7-3c38-46c8-8859-88196e0ca461|00000000-0000-0000-0000-000000000000",
+          "CHANGED TO 402"
+        ],
+        [
+          "items_not_allowed|158355338|106600000|e2dc71d2-650f-40d9-9ced-dc428834e3c2|00000000-0000-0000-0000-000000000000",
+          "XTAL LINE OK"
+        ],
+        [
+          "items_not_allowed|159027669|107327669|16d77756-fada-4f53-ae15-929c03e7af1f|00000000-0000-0000-0000-000000000000",
+          "XTAL LINE OK"
+        ],
+        [
+          "items_not_allowed|160330000|107665143|55f27979-bef6-493b-bdc6-3832ba97112b|00000000-0000-0000-0000-000000000000",
+          "XTAL PAD OK"
+        ],
+        [
+          "items_not_allowed|162000000|106600000|d97105ae-8f7d-44ba-a681-9ee313ec61dc|00000000-0000-0000-0000-000000000000",
+          "XTAL LINE OK"
+        ],
+        [
+          "items_not_allowed|163400000|108000000|f4343424-fe12-4a7a-8559-004b168cb06a|00000000-0000-0000-0000-000000000000",
+          "XTAL PAD OK"
+        ],
+        [
+          "missing_footprint|0|0|00000000-0000-0000-0000-000000000000|00000000-0000-0000-0000-000000000000",
+          "INTENTIONAL"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -92,8 +137,8 @@
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
-        "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_issues": "ignore",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "ignore",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -538,7 +583,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "node_v6_0_0.step",
       "svg": "",
       "vrml": ""
     },
