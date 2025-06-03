@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.0,
+          "height": 1.05,
+          "width": 2.2
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -63,7 +63,12 @@
           "width": 4.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|133495000|95404999|68242b87-16ad-418e-85e0-5f3cd34f851b|75cbca16-e876-4feb-ac21-882f7e084012",
+          "ALLOWED - SMA & UFL"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -536,7 +541,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "node_v6_2_0.step",
       "svg": "",
       "vrml": ""
     },
