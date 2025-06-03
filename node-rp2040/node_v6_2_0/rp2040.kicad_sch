@@ -5020,12 +5020,6 @@
 		(uuid "5c06ca42-db2a-41c3-a480-b1946ed3fb9b")
 	)
 	(junction
-		(at 104.14 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "650acaea-bbfa-4db1-9656-7b415c5bb131")
-	)
-	(junction
 		(at 71.12 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5060,12 +5054,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "886c4cd1-c2c6-4da8-a3f5-05c8b1561d86")
-	)
-	(junction
-		(at 104.14 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "92a215a1-1200-4bea-a9df-2d17ffecd425")
 	)
 	(junction
 		(at 194.31 77.47)
@@ -5472,16 +5460,6 @@
 			(type default)
 		)
 		(uuid "2cf119b7-24dc-45b6-8078-eeb369ba1289")
-	)
-	(wire
-		(pts
-			(xy 116.84 25.4) (xy 116.84 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ec5a8c5-50dc-406f-b46a-2fd6d88a5740")
 	)
 	(wire
 		(pts
@@ -6105,16 +6083,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 34.29) (xy 116.84 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92f093c5-6a5b-48dd-bc63-ae5ba71c7ba8")
-	)
-	(wire
-		(pts
 			(xy 218.44 27.94) (xy 218.44 29.21)
 		)
 		(stroke
@@ -6365,16 +6333,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 35.56) (xy 104.14 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c02b7577-18a5-43b0-8ef0-7fde0610218c")
-	)
-	(wire
-		(pts
 			(xy 179.07 113.03) (xy 179.07 114.3)
 		)
 		(stroke
@@ -6592,16 +6550,6 @@
 			(type default)
 		)
 		(uuid "d1f21a63-bb38-469f-9297-3532d53b193e")
-	)
-	(wire
-		(pts
-			(xy 104.14 25.4) (xy 116.84 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d304d081-2307-4a73-a8d4-087ce9296c31")
 	)
 	(wire
 		(pts
@@ -11886,202 +11834,6 @@
 			(project "node_v5_0_0"
 				(path "/03dc898e-8f05-4377-b5c6-8a0f09836da8/97d6a4f8-0a43-4caa-bfdf-f6d51a8f6307"
 					(reference "#PWR098")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "JLCPCB-Capacitors:0402,100nF")
-		(at 116.84 30.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9d62fc5e-f0b9-4f58-8413-878bd12bc828")
-		(property "Reference" "C8"
-			(at 119.38 27.9399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1u"
-			(at 119.38 30.4799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "JLCPCB:C_0402"
-			(at 115.062 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "16V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" "10658398"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.004USD"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" "SMT"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "CL05B104KO5NNNC"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage Rated" "16V"
-			(at 119.38 33.02 0)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-				(justify left)
-			)
-		)
-		(property "Tolerance" "±10%"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Capacitance" "100nF"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature Coefficient" "X7R"
-			(at 116.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f8c9cbf2-3c28-4a43-88e3-d33f15388d8b")
-		)
-		(pin "1"
-			(uuid "47da5eee-df4e-40bb-bec6-6a171319bd3b")
-		)
-		(instances
-			(project "node_v4_0"
-				(path "/03dc898e-8f05-4377-b5c6-8a0f09836da8/97d6a4f8-0a43-4caa-bfdf-f6d51a8f6307"
-					(reference "C8")
 					(unit 1)
 				)
 			)

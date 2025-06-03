@@ -5213,9 +5213,9 @@
 		(at 190.5 78.74 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "ba1b59df-425a-4b0b-9755-6879b4c6fafb")
 		(property "Reference" "C43"
 			(at 190.5 72.39 90)
