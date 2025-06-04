@@ -1,4 +1,4 @@
-25873545372610479
+25853138495069163
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -66444,40 +66444,12 @@ ANT-TH_L25.0-W25.0 footprint C784398
 1
 1
 JLCPCB
-AUDIO-TH_PJ-3850-5A
-AUDIO-TH_PJ-3850-5A footprint
-AUDIO-TH_PJ-3850-5A footprint C707255
-0
-5
-5
-JLCPCB
-BAT-TH_BS-07-A1BJ001
-BAT-TH_BS-07-A1BJ001 footprint
-BAT-TH_BS-07-A1BJ001 footprint C2979167
-0
-2
-2
-JLCPCB
 Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering
 LGA-8
 lga land grid array
 0
 8
 8
-JLCPCB
-CONN-TH_2P-P5.00_KFM736H-5.0-2X1P
-CONN-TH_2P-P5.00_KFM736H-5.0-2X1P footprint
-CONN-TH_2P-P5.00_KFM736H-5.0-2X1P footprint C2974934
-0
-2
-2
-JLCPCB
-CONN-TH_4P-P5.08_DB129VG-5.08-4P-GN-S
-CONN-TH_4P-P5.08_DB129VG-5.08-4P-GN-S footprint
-CONN-TH_4P-P5.08_DB129VG-5.08-4P-GN-S footprint C2981774
-0
-4
-4
 JLCPCB
 CRYSTAL-SMD_4P-L3.2-W2.5-BL
 CRYSTAL-SMD_4P-L3.2-W2.5-BL footprint
@@ -66787,13 +66759,6 @@ LQFP QFP
 48
 48
 JLCPCB
-LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL
-LQFP, 48 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ltc2358-16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
-LQFP QFP
-0
-48
-48
-JLCPCB
 L_0402
 Inductor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
 inductor
@@ -66818,41 +66783,6 @@ JLCPCB
 L_1206
 Inductor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 80, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
 inductor
-0
-2
-2
-JLCPCB
-L_SMD,4.5x4.1mm
-IND-SMD_L4.5-W4.1_TMPA0402SP footprint
-IND-SMD_L4.5-W4.1_TMPA0402SP footprint C2875615
-0
-2
-2
-JLCPCB
-L_SMD,4x4mm
-IND-SMD_L4.0-W4.0-A footprint
-IND-SMD_L4.0-W4.0-A footprint C2849465
-0
-2
-2
-JLCPCB
-L_SMD,8x8mm
-IND-SMD_L8.0-W8.0 footprint
-IND-SMD_L8.0-W8.0 footprint C2827415
-0
-2
-2
-JLCPCB
-L_SMD,12.3x12.3mm
-Choke, SMD, 12x12mm 6mm height
-Choke SMD
-0
-2
-2
-JLCPCB
-L_SMD,12.5x12.5mm
-IND-SMD_L12.5-W12.5 footprint
-IND-SMD_L12.5-W12.5 footprint C2924827
 0
 2
 2
@@ -66934,13 +66864,6 @@ QFN NoLead
 59
 33
 JLCPCB
-QFN-32_L5.0-W5.0-P0.50-TL-EP3.4
-QFN-32_L5.0-W5.0-P0.50-TL-EP3.4 footprint
-QFN-32_L5.0-W5.0-P0.50-TL-EP3.4 footprint C459293
-0
-43
-33
-JLCPCB
 QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm_ThermalVias
 QFN, 56 Pin (https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf#page=634), generated with kicad-footprint-generator ipc_noLead_generator.py
 QFN NoLead
@@ -66975,13 +66898,6 @@ SOT-323-3_L2.0-W1.3-P1.30-LS2.1-BR footprint C7420322
 0
 3
 3
-JLCPCB
-RV_Plugin,P=5mm
-RES-TH_L8.0-W5.4-P5.00-D0.6 footprint
-RES-TH_L8.0-W5.4-P5.00-D0.6 footprint C2919238
-0
-2
-2
 JLCPCB
 R_0402
 Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
@@ -67020,20 +66936,6 @@ resistor
 JLCPCB
 R_1206
 Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
-resistor
-0
-2
-2
-JLCPCB
-R_2010
-Resistor SMD 2010 (5025 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
-resistor
-0
-2
-2
-JLCPCB
-R_2512
-Resistor SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
 resistor
 0
 2
@@ -103678,6 +103580,34 @@ handsome
 0
 WiSDOM
 prince
+
+
+0
+0
+0
+logos
+cat
+
+
+0
+0
+0
+logos
+github_qr
+
+
+0
+0
+0
+logos
+qrcode
+
+
+0
+0
+0
+logos
+wisdom_logo_lineborder
 
 
 0

@@ -4923,7 +4923,7 @@
 		)
 		(uuid "9e18cbe1-1712-4842-94ec-e69b35172a5c")
 	)
-	(text "25MHZ XTAL"
+	(text "12MHZ XTAL"
 		(exclude_from_sim no)
 		(at 188.976 82.296 0)
 		(effects
